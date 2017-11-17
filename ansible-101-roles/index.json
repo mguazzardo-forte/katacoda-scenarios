@@ -1,0 +1,51 @@
+{
+  "pathwayTitle": "DevOps 101 - Tenerife",
+  "title": "Ansible 101 - Los roles de Ansible",
+  "description": "¡Controla las funciones de los distintos directorios de Ansible en este curso interactivo!",
+  "difficulty": "Principiante-Intermedio",
+  "time": "25 minutes",
+  "details": {
+    "steps": [
+      {
+      	"title": "¿Qué es lo que vamos a crear?",
+      	"text": "step1.md"
+      },
+      {
+      	"title": "Directorio 'defaults'",
+      	"text": "step2.md"
+      },
+      {
+      	"title": "Directorio 'files'",
+      	"text": "step3.md"
+      },
+      {
+      	"title": "Directorio 'tasks'",
+      	"text": "step4.md"
+      },
+      {
+      	"title": "Directorio 'templates'",
+      	"text": "step5.md"
+      },
+      {
+      	"title": "Directorio 'vars'",
+      	"text": "step6.md"
+      }
+      
+    ],
+    "intro": {
+      "text": "intro.md",
+      "credits": "",
+      "courseData": "init-scenario.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uimessage1": "\u001b[32mEsta es tu terminal del curso.\r\nEscribe aqui tus comandos\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ansible"
+  }
+}

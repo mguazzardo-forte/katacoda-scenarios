@@ -1,0 +1,27 @@
+{
+  "pathwayTitle": "DevOps 101 - Tenerife",
+  "title": "Ansible Playground",
+  "description": "Sin pasos, sin esperas, juguetea con Ansible...",
+  "difficulty": "Playground",
+  "time": "Undefined",
+  "details": {
+    "steps": [
+      {
+      	"title": "Juguetea con Ansible",
+      	"text": "step1.md"
+      }  
+    ],
+    "intro": {
+      "text": "intro.md",
+      "credits": "",
+      "courseData": "init-scenario.sh"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uimessage1": "\u001b[32mEsta es tu terminal del playground.\r\nEscribe aqui tus comandos\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "centos"
+  }
+}
