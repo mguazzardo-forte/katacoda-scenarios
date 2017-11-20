@@ -1,7 +1,7 @@
 {
   "pathwayTitle": "DevOps 101 - Tenerife",
   "title": "Ansible 101 - Introducción",
-  "description": "Introducción rápida a Ansible para la configuración de máquinas. Aprende cómo funciona Ansible de manera básica, una herramienta muy utilizada para DevOps!",
+  "description": "Introducción rápida a Ansible para la configuración de máquinas. Aprende cómo funciona Ansible, una herramienta muy utilizada para DevOps!",
   "difficulty": "Principiante",
   "time": "10 minutes",
   "details": {
