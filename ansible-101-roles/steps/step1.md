@@ -15,6 +15,8 @@ Generalmente en él vamos a definir una variable cuyo valor no es extremadamente
 
 En nuestro caso, estas variables serán el nombre, el género y el año de nacimiento, que son datos bastante propensos a cambiar. 
 
+# Creando nuestro main.yml
+
 Con esto claro, vamos a crear nuestras variables por defecto.
 
 Primero que nada, vamos a ubicarnos en el directorio de Ansible: `cd ansible`{{execute}}
