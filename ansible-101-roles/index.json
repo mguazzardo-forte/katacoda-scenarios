@@ -10,7 +10,7 @@
         "file": "playbook/playbook.yml", 
         "target": "/home/scrapbook/tutorial/ansible/"
       }] 
-    }
+    },
     "steps": [
       {
       	"title": "¿Qué es lo que vamos a crear?",
