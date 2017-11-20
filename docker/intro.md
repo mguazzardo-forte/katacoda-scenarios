@@ -1,5 +1,6 @@
-# ¿Qué es Ansible?
-Ansible es una **plataforma de software libre que permite configurar y administrar equipos informáticos**, o así es como se describe en la Wikipedia.
+# ¿Qué es Docker?
+Docker es un proyecto de código abierto que automatiza el **despliegue de aplicaciones dentro de contenedores de software**, proporcionando una capa adicional de abstracción y automatización de Virtualización a nivel de sistema operativo en Linux. Docker utiliza características de **aislamiento de recursos del kernel de Linux**, tales como cgroups y espacios de nombres (namespaces) para permitir que "contenedores" independientes se ejecuten dentro de una sola instancia de Linux, **evitando la sobrecarga de iniciar y mantener máquinas virtuales**, o así es como se describe en la Wikipedia.
+
 En la práctica, Ansible no sirve única y exclusivamente para eso, sino que también nos permite generar imágenes Docker, subir/descargar artefactos de un repositorio y generar ficheros que variarán según la ejecución gracias a la posibilidad de parametrizar plantillas. 
 
 Para un desarrollador esto es muy interesante, y es muy común ver Ansible como motor para lograr la Integración Continua y la Entrega Continua en equipos de desarrollo de Software.
