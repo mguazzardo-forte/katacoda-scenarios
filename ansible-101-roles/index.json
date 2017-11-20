@@ -14,23 +14,20 @@
   },
   "details": {
     "steps": [{
-      	"title": "¿Qué es lo que vamos a crear?",
+      	"title": "El directorio 'defaults'",
       	"text": "steps/step1.md"
       }, {
-      	"title": "Directorio 'defaults'",
-      	"text": "step2.md"
+      	"title": "El directorio 'templates'",
+      	"text": "steps/step2.md"
       }, {
-      	"title": "Directorio 'files'",
-      	"text": "step3.md"
+      	"title": "El directorio 'vars'",
+      	"text": "steps/step3.md"
       }, {
-      	"title": "Directorio 'tasks'",
-      	"text": "step4.md"
+      	"title": "El directorio 'tasks'",
+      	"text": "steps/step4.md"
       }, {
-      	"title": "Directorio 'templates'",
-      	"text": "step5.md"
-      }, {
-      	"title": "Directorio 'vars'",
-      	"text": "step6.md"
+       	"title": "Llegó la hora de la verdad...",
+      	"text": "steps/step4.md"
       }],
     "intro": {
       "text": "stages/intro.md",
