@@ -45,6 +45,6 @@
         "file": "playbook.yml", 
         "target": "/home/scrapbook/tutorial/ansible/"
       }] 
-    },
-  },
+    }
+  }
 }
