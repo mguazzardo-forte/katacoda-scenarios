@@ -7,14 +7,14 @@
   "details": {
     "assets": { 
       "client": [{
-        "file": "playbook/playbook.yml", 
+        "file": "playbooks/playbook.yml", 
         "target": "/home/scrapbook/tutorial/ansible/"
       }] 
     },
     "steps": [
       {
       	"title": "¿Qué es lo que vamos a crear?",
-      	"text": "step1.md"
+      	"text": "steps/step1.md"
       },
       {
       	"title": "Directorio 'defaults'",
