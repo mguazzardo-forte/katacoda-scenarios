@@ -7,7 +7,7 @@
   "details": {
     "assets": { 
       "client": [{
-        "file": "playbooks/playbook.yml", 
+        "file": "playbook.yml", 
         "target": "/home/scrapbook/tutorial/ansible/"
       }] 
     },
