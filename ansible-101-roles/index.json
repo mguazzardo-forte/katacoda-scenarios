@@ -33,12 +33,12 @@
       	"text": "step6.md"
       }],
     "intro": {
-      "text": "intro.md",
+      "text": "stages/intro.md",
       "credits": "",
-      "code": "init-scenario.sh"
+      "code": "script/init-scenario.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "stages/finish.md"
     },
     "assets": { 
       "client": [{
