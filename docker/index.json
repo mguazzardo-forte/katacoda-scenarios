@@ -12,6 +12,7 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
+    "icon": "fa-docker",
     "uimessage1": "\u001b[32mÉsta es tu terminal del curso.\r\nEscribe aquí tus comandos\u001b[m\r\n"
   },
   "backend": {
