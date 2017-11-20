@@ -33,6 +33,16 @@ Es muy fácil de aprender y la única problemática que puede ofrecer es la de q
 El caso, es que para probar un primer playbook.yml lo más simple posible, vamos a ejecutar directamente desde la shell. Generalmente esto no es recomendable, ya que lanzar el módulo de Ansible de Shell significa estar ejecutando código de manera nativa en la máquina, pero como estamos de pruebas y queremos algo sencillo, por ahora bastará.  
  
 En caso de que vayáis a utilizar este recurso como aprendizaje para un uso más profesional de Ansible, recordadlo bien: **no se recomienda utilizar el módulo Shell a no ser que sea _ESTRICTAMENTE_ necesario** 
+
+#### ¿Qué es un Playbook?
+
+Ansible funciona a través del uso de unos ficheros donde se le dice lo que hay que ejecutar. Podemos pensar en un playbook como una lista con todas las tareas que hay que realizar para conseguir lo que queremos. 
+
+Los playbooks tienen varias formas distintas de utilizarse: existen configuraciones donde se listan las tareas tal cual, así como playbooks que llaman a un rol, que es el que tiene la lista de tareas, junto a otros ficheros; también existen playbooks que llaman a otros ficheros .yml donde se encuentran las tareas y si vamos más allá, playbooks que llaman a otros .yml que llaman a su vez a un rol dentro de ellos, cuyo fichero .yml interior llama a otros ficheros .yml donde se encuentran las tareas...
+
+Eso ya es crear una *Matrioshka* demasiado compleja para lo que queremos, pero deja ver que Ansible es altamente configurable, siempre y cuando nos quedemos dentro de su cerco.
+
+Con lo que tenemos que quedarnos es que es un fichero de extension .yml y es donde se ponen las distintas tareas, siguiendo cierto convenio que veremos a continuación...
  
 #### Rellenando nuestro playbook.yml 
  
