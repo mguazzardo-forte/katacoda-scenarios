@@ -1,29 +1,35 @@
-Para este curso vamos a utilizar una máquina **CentOS 7**, distribución que suele utilizarse para crear entornos de producción y que cuenta con mucha documentación sobre cómo solucionar todo tipo de problemas. 
+Sabemos qué es un rol y cómo funciona, qué utilidades tiene para nosotros y cómo utilizarlos para nuestro provecho... ¿pero sabemos utilizar sus funciones más potentes? Los roles, además de tareas y ficheros, son capaces de alojar variables propias, así como generar ficheros en base a variables que podrían cambiar de una a otra ejecución.
 
-Como tenemos una máquina limpia, sin mucho más que lo estrictamente necesario para funcionar, vamos a tener que instalarnos nosotros mismos Ansible. El objetivo de hacerlo en esta etapa es darnos cuenta de que Ansible no es única y exclusivamente eso, sino que se sirve de una serie de dependencias que veremos a continuación.
+Nuestro rol de pruebas se encargará de crear una tarjeta identificativa para una mascota en formato .txt, que cambiará según cómo ejecutemos nuestro playbook (o cual ejecutemos). Para simplificar el ejemplo, vamos a hacer una separación entre mascotas que son mamíferos (perros y gatos) y mascotas que son ovíparos (ninfas, canarios, etc...).
 
-Para instalar Ansible, vamos a utilizar el siguiente comando ``yum install ansible``{{execute}}
+Tendremos que mostrar su nombre, su género, su tipo de reproducción y el tipo de alimento que necesitan (pienso en el caso de los mamíferos, semillas en el caso de los ovíparos), así como el año de su nacimiento.
 
-# ¿Qué instalamos junto con Ansible?
+Al final generaremos las tarjetas bajo un directorio con el nombre de la mascota, que estará bajo un directorio que definirá si es mamífero o ovíparo y podremos crear todas las que queramos. 
 
-Una vez ejecutemos el comando, veremos cómo resuelve toda la serie de dependencias del paquete, y antes de que escribamos "y" y pulsemos Enter para instalarlo, podremos fijarnos en que **Ansible no viene solo**.
+Con el ejemplo claro... vamos a ir viendo uno a uno cómo funcionan y para qué podemos aprovechar los directorios de los roles de Ansible, en orden de aparición.
 
-En efecto, Ansible se sirve de Python para funcionar. Junto a ello necesitará, además, ser capaz de establecer conexiones SSH. Además de la estructura de ficheros, escritos en YAML, Ansible se sirve de Python para crear sus distintos módulos de automatización. 
+# El directorio 'defaults'
+Este directorio se encarga de albergar variables por defecto, por si acaso alguna de ellas no la definamos, tengan un valor que permita al Rol ejecutarse sin mayor problema.
 
-Desde módulos para control de ficheros hasta módulos de instalación de paquetes: todo (más bien CASI todo) funcionando a través de python, sin ejecutarse nativamente en las máquinas donde lo llamamos.
+Generalmente en él vamos a definir una variable cuyo valor no es extremadamente importante, o que sabemos que va a cambiar con bastante frecuencia. 
 
-¿Quiere decir, entonces, que en todas las máquinas que queramos automatizar con Ansible vamos a necesitar instalar todo esto?
+En nuestro caso, estas variables serán el nombre, el género y el año de nacimiento, que son datos bastante propensos a cambiar. 
 
-Lo bueno es que la respuesta aquí es **NO**.
+Con esto claro, vamos a crear nuestras variables por defecto.
 
-# El maestro de Ansible y sus Esclavos
+Primero que nada, vamos a ubicarnos en el directorio de Ansible: `cd ansible`{{execute}}
 
-Ansible funciona con una estructura en la que una máquina hace de maestro o nodo controlador, mientras que todas las demás, generalmente, actúan como esclavas de este maestro.
+Y ahora vamos a crear el fichero main.yml dentro de 'defaults': `touch roles/katacoder/defaults/main.yml`{{execute}}
 
-Lo mejor de todo, es que Ansible **SOLO** tiene que instalarse en la máquina que hace de controlador.
+Dentro, colocaremos las siguientes líneas de código:
 
-Para hacer funcionar los esclavos simplemente necesitaremos que esté instalado Python en ellos, ya que como habíamos explicado antes, es la parte que se encarga de la ejecución.
+```yaml
+---
+nombre: Toby
+genero: M
+nacimiento: 20/11/2017
+```
 
-Con esto listo, el maestro se encargará de establecer las conexiones y delegar las distintas tareas a sus nodos para que, a través de un comando muy simple, logremos preparar una serie de máquinas en muy poco tiempo, sin estar conectándonos nosotros directamente y ejecutando código nativamente.
+Con esto listo, no necesitamos nada más de esta carpeta. 
 
-Con esto listo y entendido, ya podemos comenzar con la creación y utilización de Ansible en nuestro pequeño entorno de pruebas.
+Pasemos al siguiente paso...
