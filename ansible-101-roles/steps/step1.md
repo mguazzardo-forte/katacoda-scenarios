@@ -8,7 +8,7 @@ Al final generaremos las tarjetas bajo un directorio con el nombre de la mascota
 
 Con el ejemplo claro... vamos a ir viendo uno a uno cómo funcionan y para qué podemos aprovechar los directorios de los roles de Ansible, en orden de aparición.
 
-# El directorio 'defaults'
+# ¿Cuál es su utilidad?
 Este directorio se encarga de albergar variables por defecto, por si acaso alguna de ellas no la definamos, tengan un valor que permita al Rol ejecutarse sin mayor problema.
 
 Generalmente en él vamos a definir una variable cuyo valor no es extremadamente importante, o que sabemos que va a cambiar con bastante frecuencia. 
