@@ -12,7 +12,6 @@ No es necesario utilizar todos los directorios para esto, por lo que este curso 
 
 En este curso aprenderemos a utilizar los siguientes directorios:
 - Directorio 'defaults'
-- Directorio 'files'
 - Directorio 'tasks'
 - Directorio 'templates'
 - Directorio 'vars'
