@@ -6,4 +6,30 @@ La idea es utilizar este fichero para definir variables que generalmente no vaya
 
 # Creando nuestro main.yml
 
-Como ocurría en el caso del directorio defaults, si tuviéramos un solo fichero, es recomendable llamarlo "main.yml". En este caso sólo vamos a contar con una variable, que cambiará según el playbook al que llamemos.  
+Como ocurría en el caso del directorio defaults, si tuviéramos un solo fichero, es recomendable llamarlo "main.yml". En este caso sólo vamos a contar con una variable, que cambiará según cómo haya sido definida la variable 'tipo', que daremos como variable extra (con la opción -e) al ejecutar el rol. 
+
+Pues bien, creemos nuestro fichero de variables para mamíferos: `touch roles/katacoder/vars/mamifero.yml`{{execute}}
+
+Y lo rellenamos con lo siguiente:
+```yaml
+---
+comida: Pienso
+```
+
+Además, vamos a crear un fichero de variables para los ovíparos: `touch roles/katacoder/vars/oviparo.yml`{{execute}}
+
+Y lo rellenamos de la misma forma:
+```yaml
+---
+comida: Semillas
+```
+
+# ¿Por qué así?
+
+Es muy probable que te estés preguntando el motivo por el cuál separar los ficheros. Bien, vamos a hacer una detección de estado de variable, es decir, vamos a comprobar cuál es el valor de la variable 'tipo', que nosotros daremos como extra vars. 
+
+Una vez comprobado, si resulta que es mamífero, incluiremos las variables de 'mamifero.yml'; si resulta que es ovíparo, pues incluiremos las de 'oviparo.yml'.
+
+Así controlaremos de manera automática la asignación del tipo de comida según la tarjeta que vayamos a crear.
+
+Con esto listo, ya podemos pasar a la siguiente fase...
