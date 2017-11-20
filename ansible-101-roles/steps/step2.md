@@ -19,6 +19,7 @@ Y la vamos a rellenar de la siguiente manera, siguiendo nuestra idea:
 - Nombre: "{{ nombre }}"
 - Género: "{{ genero }}"
 - Reproducción: "{{ tipo }}"
+- Alimentacion: "{{ comida }}"
 - Fecha de nacimiento: "{{ nacimiento }}"
 ```
 
