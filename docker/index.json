@@ -5,35 +5,9 @@
   "difficulty": "Principiante",
   "time": "10 minutes",
   "details": {
-    "steps": [
-      {
-      "title": "Preparándonos para utilizar Ansible",
-      "text": "step1.md"
-      },
-      {
-      "title": "Creando nuestro entorno de Ansible",
-      "text": "step2.md"
-      },
-      {
-      "title": "Los playbooks de Ansible",
-      "text": "step3.md"
-      },
-      {
-      "title": "Los roles de Ansible",
-      "text": "step4.md"
-      },
-      {
-      "title": "Ejemplos para practicar más...",
-      "text": "step5.md"
-      }
-      
-    ],
     "intro": {
       "text": "intro.md",
       "credits": ""
-    },
-    "finish": {
-      "text": "finish.md"
     }
   },
   "environment": {
