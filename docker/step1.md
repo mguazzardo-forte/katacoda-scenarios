@@ -25,3 +25,7 @@ La arquitectura docker se compone de los siguientes componentes:
 **Contenedor**:
 - Fichero de texto que contiene todos los comandos que se ejecutarían manualmente con el fin de construir una imagen Docker.
 - Docker puede construir imágenes automáticamente leyendo las instrucciones desde un Dockerfile. 
+
+# Primeros comandos
+ -  Para listar las imágenes disponibles en el repositorio de docker local se utiliza el comando ``docker images``{{execute}}. Como no se ha generado ni descargado ninguna debe aparecer vacío.
+ - Para listar los contenedores ejecución se debe ejecutar ``docker ps``{{execute}}. Si deseamos listar todos los contenedores tantos en ejecución como parados ``docker ps -a``{{execute}}. Del mismo modo, al no tener ninguna imagen para desplegar debe aparcer vacío.
