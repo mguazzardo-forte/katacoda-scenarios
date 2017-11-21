@@ -1,25 +1,12 @@
-# Katacoda Hello World
-This is an example repository. Starting building your own scenario by editing the files in this directory. Create additional scenarios by adding additional directories to the top level folder.
+# Ansible 101 - Roles (DevOpsTF)
+Aquí se encuentran todos los recursos del curso interactivo de Ansible sobre los roles, preparado por el grupo @devopstf y al que se puede acceder a través del siguiente [enlace](https://katacoda.com/devopstf/scenarios/ansible-101-roles).
 
+## Distribución de carpetas
+El fichero index.json se encarga de orquestar todos los recursos de este curso interactivo. A partir de ahí las siguientes carpetas tienen la utilidad que se describe en esta tabla:
 
-## index.json
-The file _index.json_ contains all the information about the scenario. It has the title, description and a heading for each step.
-
-The file also contains an imageid. This refers to the Katacoda environment. Here are some environment image IDs you may find useful:
-
-| **Environment**  | **Image ID**  |
-|------------------|---------------|
-| Docker           | docker        |
-| Kubernetes       | kubernetes    |
-| CoreOS           | coreos        |
-| Node.js v6       | node6         |
-| Go               | go            |
-| C#               | c#            |
-| Java             | java8         |
-| Bash             | bash          |
-
-## Pro Author Accounts
-Interested in metrics, private repositories and environments for classroom teaching? Update to become a Pro Author at https://katacoda.com/teach
-
-## Interactive Developer Portals
-Want to take your scenarios to the next level? Visit https://katacoda.com/embed
+| **Directorio**  | **Utilidad**                                                                                  |
+|-----------------|-----------------------------------------------------------------------------------------------|
+| script          | Guardar los scripts del curso.                                                                |
+| assets          | Contiene los ficheros a copiar en el workspace (en este caso, un playbook.yml predefinido)    |
+| stages          | Etapas de principio y fin del curso (presentación + finalización)                             |
+| steps           | Cada uno de los pasos de este curso.                                                          |
