@@ -9,7 +9,11 @@
       {
       "title": "Preparándonos para utilizar Docker",
       "text": "step1.md"
-      }
+      },
+     {
+      "title": "Preparándonos para utilizar Docker",
+      "text": "step2.md"
+      },
       
     ],
     "intro": {
