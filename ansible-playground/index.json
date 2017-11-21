@@ -7,7 +7,7 @@
   "details": {
     "steps": [{
       	"title": "Juguetea con Ansible",
-      	"text": "steps/step1.md"
+      	"text": "steps/step1.md",
         "courseData": "scripts/init-scenario.sh"
     }]
   },
