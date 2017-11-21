@@ -19,7 +19,12 @@
     "intro": {
       "text": "intro.md",
       "credits": ""
-    }
+    },
+    "assets": { 
+      "client": [{
+        "file": "Dockerfile", 
+        "target": "/home/scrapbook/tutorial/"
+      }] 
   },
   "environment": {
     "uilayout": "editor-terminal",
