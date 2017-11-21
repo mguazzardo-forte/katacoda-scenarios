@@ -28,6 +28,9 @@
       }, {
        	"title": "Llegó la hora de la verdad...",
       	"text": "steps/step5.md"
+      }, {
+        "title": "El siguiente paso te toca darlo a tí.",
+        "text": "steps/step6.md"
       }],
     "intro": {
       "text": "stages/intro.md",
