@@ -10,7 +10,6 @@
   "environment": {
     "uilayout": "editor-terminal",
     "hidefinish": "true",
-    "hideintro": "true",
     "uimessage1": "\u001b[32mEsta es tu terminal del playground.\r\nEscribe aqui tus comandos\u001b[m\r\n"
   },
   "details": {
