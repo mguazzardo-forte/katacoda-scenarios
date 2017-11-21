@@ -1,4 +1,4 @@
-A partir de aquí, ¡ya todo queda a tu discreción!
+**A partir de aquí, ¡ya todo queda a tu discreción!**
 
 Aún así, entiendo que todo se hace más llevadero si alguien te propone una idea a desarrollar con lo que sea que estés aprendiendo a utilizar, así que... Aquí van unas cuantas ideas para practicar:
 
