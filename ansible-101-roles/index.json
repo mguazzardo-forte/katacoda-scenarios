@@ -32,7 +32,7 @@
     "intro": {
       "text": "stages/intro.md",
       "credits": "",
-      "code": "script/init-scenario.sh"
+      "courseData": "script/init-scenario.sh"
     },
     "finish": {
       "text": "stages/finish.md"
