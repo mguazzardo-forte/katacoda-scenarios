@@ -16,9 +16,9 @@ Vamos a verlo en la práctica, introduciendo esto en el fichero main.yml:
 ```yaml
 ---
 - name: Create pet's own folder
-  file:
-    path: /home/scrapbook/tutorial/tarjetas/{{ tipo }}s/{{ nombre }}
-    state: directory
+    file:
+      path: /home/scrapbook/tutorial/tarjetas/{{ tipo }}s/{{ nombre }}
+      state: directory
 ```
 
 Como podemos apreciar en el 'path', es decir, en la dirección, utilizamos dos variables para la creación del directorio propio de la mascota. La primera es el tipo, que definiremos en singular: como el directorio está creado en plural, podemos hacer el truco de encadenarle la s a la variable, de manera que una vez se ejecute el rol, Ansible lo sustituirá, quedándole la ruta `/home/scrapbook/tutorial/tarjetas/mamiferos` (por ejemplo).
@@ -29,9 +29,9 @@ Ahora, para crear la template, también utilizaremos el mismo 'truco':
 
 ```yaml
 - name: Create pet's card with its name
-  template:
-    src: tarjeta.j2
-    dest: /home/scrapbook/tutorial/tarjetas/{{ tipo }}s/{{ nombre }}/tarjeta.txt
+    template:
+      src: tarjeta.j2
+      dest: /home/scrapbook/tutorial/tarjetas/{{ tipo }}s/{{ nombre }}/tarjeta.txt
 ```
 
 Como podemos ver, a la hora de dar el fichero, a través de la opción "src" (origen) del módulo de templates, no necesitaremos más que darle el propio nombre. Esto es así porque el módulo "template" presupone que tiene que mirar dentro del directorio 'templates' de nuestro rol.
