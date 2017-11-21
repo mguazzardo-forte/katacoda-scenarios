@@ -8,32 +8,32 @@
     "steps": [
       {
       "title": "Preparándonos para utilizar Ansible",
-      "text": "step1.md"
+      "text": "steps/step1.md"
       },
       {
       "title": "Creando nuestro entorno de Ansible",
-      "text": "step2.md"
+      "text": "steps/step2.md"
       },
       {
       "title": "Los playbooks de Ansible",
-      "text": "step3.md"
+      "text": "steps/step3.md"
       },
       {
       "title": "Los roles de Ansible",
-      "text": "step4.md"
+      "text": "steps/step4.md"
       },
       {
       "title": "Ejemplos para practicar más...",
-      "text": "step5.md"
+      "text": "steps/step5.md"
       }
       
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "stages/intro.md",
       "credits": "DevOps TF - Óscar Díaz Domínguez"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "stages/finish.md"
     }
   },
   "environment": {
