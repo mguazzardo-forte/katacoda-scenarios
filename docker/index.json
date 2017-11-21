@@ -24,7 +24,8 @@
       "client": [{
         "file": "Dockerfile", 
         "target": "/home/scrapbook/tutorial/"
-      }] 
+      }]
+     }
   },
   "environment": {
     "uilayout": "editor-terminal",
