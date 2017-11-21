@@ -22,3 +22,6 @@ La arquitectura docker se compone de los siguientes componentes:
 - Se ejecuta la instrucción docker build Dockerfile
 - Cuando se genera un cambio en el Dockerfle y un rebuild de la imagen, solo las nuevas capas que han cambiado son construidas (Ligeras, Pequeñas y Rápidas)
 
+**Contenedor**:
+- Fichero de texto que contiene todos los comandos que se ejecutarían manualmente con el fin de construir una imagen Docker.
+- Docker puede construir imágenes automáticamente leyendo las instrucciones desde un Dockerfile. 
