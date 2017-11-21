@@ -1,1 +1,1 @@
-yum install -y ansible && mkdir ansible && mkdir ansible/inventory && mkdir ansible/roles && touch ansible/inventory/hosts && touch ansible/playbook.yml
+echo "Preparando tu zona de juegos." && echo "Espera mientras lo dejamos todo listo :)..." && yum install -y ansible && mkdir ansible && mkdir ansible/inventory && mkdir ansible/roles && touch ansible/inventory/hosts && touch ansible/playbook.yml && echo "¡Todo listo! Es hora de jugar."
