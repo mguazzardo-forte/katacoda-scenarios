@@ -8,18 +8,19 @@
     "steps": [
       {
       	"title": "Juguetea con Ansible",
-      	"text": "step1.md"
+      	"text": "steps/step1.md"
       }  
     ],
     "intro": {
       "text": "intro.md",
       "credits": "",
-      "courseData": "init-scenario.sh"
+      "courseData": "scripts/init-scenario.sh"
     }
   },
   "environment": {
     "uilayout": "editor-terminal",
     "hidefinish": "true",
+    "hideintro": "true",
     "uimessage1": "\u001b[32mEsta es tu terminal del playground.\r\nEscribe aqui tus comandos\u001b[m\r\n"
   },
   "backend": {
