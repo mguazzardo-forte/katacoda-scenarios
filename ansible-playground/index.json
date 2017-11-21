@@ -4,16 +4,8 @@
   "description": "Sin pasos, sin guias, juguetea con Ansible...",
   "difficulty": "Playground",
   "time": "Undefined",
-  "details": {
-    "steps": [{
-      	"title": "Juguetea con Ansible",
-      	"text": "steps/step1.md",
-    }],
-    "intro": {
-      "text": "stages/intro.md",
-      "credits": "DevOps TF - Óscar Díaz Domínguez",
-      "courseData": "scripts/init-scenario.sh"
-    }
+  "backend": {
+    "imageid": "centos"
   },
   "environment": {
     "uilayout": "editor-terminal",
@@ -21,7 +13,15 @@
     "hideintro": "true",
     "uimessage1": "\u001b[32mEsta es tu terminal del playground.\r\nEscribe aqui tus comandos\u001b[m\r\n"
   },
-  "backend": {
-    "imageid": "centos"
+  "details": {
+    "steps": [{
+      	"title": "Juguetea con Ansible",
+      	"text": "steps/step1.md",
+      }],
+    "intro": {
+      "text": "stages/intro.md",
+      "credits": "DevOps TF - Óscar Díaz Domínguez",
+      "courseData": "scripts/init-scenario.sh"
+    }
   }
 }
