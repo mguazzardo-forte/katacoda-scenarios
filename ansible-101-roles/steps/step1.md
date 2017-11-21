@@ -1,4 +1,4 @@
-Sabemos qué es un rol y cómo funciona, qué utilidades tiene para nosotros y cómo utilizarlos para nuestro provecho... ¿pero sabemos utilizar sus funciones más potentes? Los roles, además de tareas y ficheros, son capaces de alojar variables propias, así como generar ficheros en base a variables que podrían cambiar de una a otra ejecución.
+**Sabemos qué es un rol y cómo funciona**, qué utilidades tiene para nosotros y cómo utilizarlos para nuestro provecho... **¿pero sabemos utilizar sus funciones más potentes?** Los roles, además de tareas y ficheros, son capaces de alojar variables propias, así como generar ficheros en base a variables que podrían cambiar de una a otra ejecución.
 
 Nuestro rol de pruebas se encargará de crear una tarjeta identificativa para una mascota en formato .txt, que cambiará según cómo ejecutemos nuestro playbook (o cual ejecutemos). Para simplificar el ejemplo, vamos a hacer una separación entre mascotas que son mamíferos (perros y gatos) y mascotas que son ovíparos (ninfas, canarios, etc...).
 
@@ -9,9 +9,9 @@ Al final generaremos las tarjetas bajo un directorio con el nombre de la mascota
 Con el ejemplo claro... vamos a ir viendo uno a uno cómo funcionan y para qué podemos aprovechar los directorios de los roles de Ansible, en orden de aparición.
 
 # ¿Cuál es su utilidad?
-Este directorio se encarga de albergar variables por defecto, por si acaso alguna de ellas no la definamos, tengan un valor que permita al Rol ejecutarse sin mayor problema.
+**Este directorio se encarga de albergar variables por defecto**, por si acaso alguna de ellas no la definamos, tengan un valor que permita al Rol ejecutarse sin mayor problema.
 
-Generalmente en él vamos a definir una variable cuyo valor no es extremadamente importante, o que sabemos que va a cambiar con bastante frecuencia. 
+Generalmente en él vamos a definir una **variable cuyo valor no es extremadamente importante, o que sabemos que va a cambiar con bastante frecuencia**. 
 
 En nuestro caso, estas variables serán el nombre, el género y el año de nacimiento, que son datos bastante propensos a cambiar. 
 
