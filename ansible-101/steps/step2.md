@@ -1,4 +1,4 @@
-Para organizarnos mejor, vamos a crearnos una carpeta dentro de nuestro entorno de pruebas de KataCoda.  
+Para organizarnos mejor, **vamos a crearnos una carpeta dentro de nuestro entorno de pruebas de KataCoda**.  
  
 Generalmente siempre vamos a comenzar con una carpeta llamada '*ansible*', si estamos hablando a nivel de proyecto, ya que así sabremos que **TODO** lo que se encuentra dentro de esta carpeta es para Ansible y si necesitamos tocar algo va a ser ahí y en ningún otro lugar más.  
  
