@@ -16,11 +16,11 @@ Y la vamos a rellenar de la siguiente manera, siguiendo nuestra idea:
 
 ```jinja2
 --- TARJETA IDENTIFICATIVA DE MASCOTA
-- Nombre: "{{ nombre }}"
-- Género: "{{ genero }}"
-- Reproducción: "{{ tipo }}"
-- Alimentacion: "{{ comida }}"
-- Fecha de nacimiento: "{{ nacimiento }}"
+- Nombre: {{ nombre }}
+- Género: {{ genero }}
+- Reproducción: {{ tipo }}
+- Alimentacion: {{ comida }}
+- Fecha de nacimiento: {{ nacimiento }}
 ```
 
 Como se puede apreciar, las variables para Ansible han de ser definidas de esta manera, con los "{{ }}" alrededor y sus correspondientes espacios, así como las comillas. Esto es muy importante por que de lo contrario Ansible se va a quejar de que algo está mal escrito.
