@@ -15,10 +15,10 @@ La arquitectura docker se compone de los siguientes componentes:
 
 # Objetos de Docker
 
-- Imagen: 
-   - Fichero binario que contiene todo el sistema de ficheros de un contenedor
-   - Estructurado en capas (layers) por delta. 
-   - Para su construcción se genera un fichero (Dockerfile)
-   - Se ejecuta la instrucción docker build Dockerfile
-   - Cuando se genera un cambio en el Dockerfle y un rebuild de la imagen, solo las nuevas capas que han cambiado son construidas (Ligeras, Pequeñas y Rápidas)
+- **Imagen**: 
+    Fichero binario que contiene todo el sistema de ficheros de un contenedor
+    Estructurado en capas (layers) por delta. 
+    Para su construcción se genera un fichero (Dockerfile)
+    Se ejecuta la instrucción docker build Dockerfile
+    Cuando se genera un cambio en el Dockerfle y un rebuild de la imagen, solo las nuevas capas que han cambiado son construidas (Ligeras, Pequeñas y Rápidas)
 
