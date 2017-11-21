@@ -10,7 +10,7 @@
       	"text": "steps/step1.md",
     }]
   },
-  "intro" {
+  "intro": {
     "text": "stages/intro.md",
     "credits": "DevOps TF - Óscar Díaz Domínguez",
     "courseData": "scripts/init-scenario.sh"
