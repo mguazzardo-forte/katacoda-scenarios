@@ -13,7 +13,7 @@
       "text": "stages/intro.md",
       "credits": "DevOps TF - Óscar Díaz Domínguez",
       "courseData": "scripts/init-scenario.sh"
-    },
+    }
   },
   "environment": {
     "uilayout": "editor-terminal",
