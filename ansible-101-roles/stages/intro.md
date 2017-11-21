@@ -2,7 +2,7 @@
 
 Si estás aquí, es muy probable que ya sepas un poco de Ansible y cómo crear un Playbook o un Rol muy simple... Si no es así, **¡te recomiendo ver nuestro otro curso interactivo que sirve como introducción al fabuloso mundo de Ansible!** Lo tienes [aquí](https://katacoda.com/devopstf/scenarios/ansible-101).
 
-#### ¿Qué aprenderé en este curso?
+# ¿Qué aprenderé en este curso?
 
 Pues bien, vas a aprender cómo funcionan los distintos directorios de un Rol de Ansible. 
 
