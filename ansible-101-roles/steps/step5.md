@@ -31,6 +31,31 @@ Una vez el playbook se ejecute, si todo ha ido bien, veremos que bajo el directo
 
 **¡Genial!**
 
+
+# Comprobando las prioridades de variables
+¿Recordáis que en la carpeta '*defaults*' dimos todos los valores y, además, los de comida y tipo los dimos como "indefinido"? En una ejecución correcta, **hemos visto que tanto la variable "comida" como la de "tipo" fueron sustituidas por la que le tocaba**: la primera por estar en el fichero main.yml bajo la carpeta 'vars'; la segunda por dar el valor de la variable como parámetro de la ejecución (como un *extra vars*).
+
+Si por ejemplo hubieramos definido, también, la variable 'tipo' dentro del fichero 'mamifero.yml', ¿qué hubiera ocurrido?
+
+Siguiendo las reglas de prioridad, al dar la variable tipo como extra vars, tendría precedencia sobre TODAS las variables definidas, ya sea en el inventario, como en defaults, como en vars.
+
+**Prueba tú mismo:** cambia el nombre de la mascota en el main.yml de 'defaults', y añade la variable 'tipo' dentro de mamifero.yml (o oviparo.yml, a tu gusto). Dándole el valor que tu quieras, tras ejecutar nuevamente el comando `ansible-playbook -e tipo=mamifero playbook.yml`{{execute}} veremos que se crea una nueva carpeta bajo mamíferos... Esto es así porque la variable dada con la opción -e tiene precedencia sobre la definida en el fichero de variables 'vars'.
+
+
+# Ejecuciones incorrectas
+¿Y qué hay de las *ejecuciones incorrectas*? **Puede suceder que el playbook se ejecute sin darle la opción -e y sin definir la variable de tipo**, ¿no?
+
+Pues bien, si ocurriera, **no se cargarían las variables dentro del directorio 'vars' y sucedería lo siguiente:**
+- Se cargarían únicamente las variables en 'defaults'.
+- Se crearía una subcarpeta bajo "tarjetas" con el nombre "indefinidos" (porque en defaults tenemos la variable tipo asignada como "indefinido").
+- Se crearía una subcarpeta bajo esa con el nombre de la mascota.
+- Dentro de la tarjeta.txt se rellenaría con los datos tal cual están en el fichero de 'defaults'.
+
+Con esto cubriríamos las ejecuciones incorrectas y el rol no tendría por qué fallar.
+
+Y sí, puedes probarlo tú mismo también. Solo requiere ejecutar el siguiente comando: `ansible-playbook playbook.yml`{{execute}}
+
+
 # ¿Algo más que añadir?
 Este rol, obviamente, es algo muy simple y sin un uso práctico en el mundo real, pero siguiendo su esquema seríamos capaces de utilizar las variables, las templates y los distintos directorios de un rol de Ansible.
 
