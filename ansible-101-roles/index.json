@@ -1,7 +1,7 @@
 {
   "pathwayTitle": "DevOps 101 - Tenerife",
   "title": "Ansible 101 - Los Roles",
-  "description": "¡Controla las funciones de los distintos directorios de Ansible en este curso interactivo!",
+  "description": "¡Controla las funciones de los distintos directorios de los Roles de Ansible en este curso interactivo pensado para DevOps!",
   "difficulty": "Principiante-Intermedio",
   "time": "25 minutes",
   "backend": {
