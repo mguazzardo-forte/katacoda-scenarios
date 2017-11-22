@@ -30,6 +30,8 @@ Dentro, colocaremos las siguientes líneas de código:
 nombre: Toby
 genero: M
 nacimiento: 20/11/2017
+tipo: indefinido
+comida: indefinido
 ```
 
 Con esto listo, no necesitamos nada más de esta carpeta. 
