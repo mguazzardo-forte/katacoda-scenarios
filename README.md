@@ -12,7 +12,7 @@ Escenario para aprender a utilizar funcionalidades de los Roles de Ansible que e
 
 Puedes acceder directamente a través de este [enlace](https://www.katacoda.com/odiazdom/scenarios/ansible-101-roles).
 
-## Escenario de Ansible (ansible-playground) 
+## Zona de Juegos de Ansible (ansible-playground) 
 Practica sin limitaciones (más que las que tiene el propio Katacoda) y crea tus roles de práctica de Ansible o prueba distintos módulos y funcionalidades a tu bola en este Playground.
 
 Puedes acceder directamente a través de este [enlace](https://www.katacoda.com/odiazdom/scenarios/ansible-playground).
