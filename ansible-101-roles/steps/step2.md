@@ -17,8 +17,8 @@ Y la vamos a rellenar de la siguiente manera, siguiendo nuestra idea:
 ```jinja2
 --- TARJETA IDENTIFICATIVA DE MASCOTA
 - Nombre: {{ nombre }}
-- Género: {{ genero }}
-- Reproducción: {{ tipo }}
+- Genero: {{ genero }}
+- Reproduccion: {{ tipo }}
 - Alimentacion: {{ comida }}
 - Fecha de nacimiento: {{ nacimiento }}
 ```
