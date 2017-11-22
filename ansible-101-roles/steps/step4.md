@@ -3,6 +3,8 @@ Y por fin podemos empezar a crear nuestras tareas. **Es recomendable que esto se
 # Rellenando el main.yml
 Debido a que en cuanto a este fichero tenemos muy claro su objetivo, **no vamos a indagar mucho más en él**.
 
+Así que simplemente creemos el fichero y comencemos: `touch roles/katacoder/tasks/main.yml`{{execute}}
+
 Para empezar, **vamos a necesitar que el rol cree la carpeta de la mascota dentro de su tipo de reproducción**. Si es 'mamifero', se creará un subdirectorio dentro del que ya está creado, con el nombre de la mascota, y dentro un "tarjeta.txt" con todos los datos.
 
 Gracias a las variables, **vamos a automatizar esto de manera que no nos importe cuál es el nombre de la mascota, mucho menos su tipo de reproducción**, que siempre definimos al llamar al playbook con la opción -e.
