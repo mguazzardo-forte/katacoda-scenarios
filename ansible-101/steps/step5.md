@@ -19,6 +19,8 @@ Y la documentación sobre las variables [aquí](http://docs.ansible.com/ansible/
 
 Investigar por uno mismo es la mejor manera de aprender y retener los conocimientos... ¡así que no tengas miedo!
 
+Si quieres un entorno limpio para trabajar en esto... puedes probar nuestro [Ansible Playground](https://katacoda.com/devopstf/scenarios/ansible-playground).
+
 # Más allá de KataCoda
 Podrías crearte tu entorno de pruebas de Ansible utilizando Docker. Para Windows 7 cuentas con Docker Toolbox, que te facilita su instalación, pero en Windows 10 cuentas con una CLI pura con la que controlarlo todo más al estilo 'tío de sistemas'. 
 
