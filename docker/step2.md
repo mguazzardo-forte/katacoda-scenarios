@@ -17,3 +17,4 @@
 
 # Primeros comandos (Generar una imagen docker de Apache)
  - Se ha generado un Dockerfile para la creación de un contenedor apache en la ruta ./apache/Dockerfile. Para visualizar este archivo `cat ./apache/Dockerfile`{{execute}} Para generar la imagen de este contenededor se debe ejectutar el comando build. Para dar un nombre a la imagen a generar se  introduce la opción -t (nommbre:version) `docker build -t apache:v1 ./apache/Dockerfile`{{execute}}
+ - Para desplegar el contenedor se debe ejecutar el comando docker run y posteriormente mapear el puerto entre el host y el servicio dentro del contenedor `docker run -p 80:80 apache:v1`{{execute}}
