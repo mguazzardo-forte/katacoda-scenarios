@@ -22,7 +22,7 @@
     },
     "assets": { 
       "client": [{
-        "file": "apache", 
+        "folder": "apache", 
         "target": "/home/scrapbook/tutorial/"
       }]
      }
