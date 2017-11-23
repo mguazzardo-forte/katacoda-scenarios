@@ -67,12 +67,16 @@ La segunda de ellas hace exactamente lo mismo, pero esta vez simplemente hace un
  
 Para ejecutarlo simplemente tendremos que hacer lo siguiente, situándonos dentro del directorio de '*ansible*': `ansible-playbook playbook.yml`{{execute}} 
  
-Y si hacemos el siguiente comando... `cat /home/scrapbook/tutorial/ansible-output.txt`{{execute}} 
- 
-Veremos que, efectivamente, vemos que se ha escrito "*Hello*" dentro del fichero... ¡todo de un botonazo! 
+Y si hacemos el siguiente comando... `cat /home/scrapbook/tutorial/ansible-output.txt`{{execute}} veremos que, efectivamente, vemos que se ha escrito "*Hello*" dentro del fichero... ¡todo de un botonazo! 
 
-Si queremos ver más, también podemos aplicarle niveles de "verbosidad" a través de la opción "-v"... Así: `ansible-playbook -v playbook.yml`{{execute}}
+Pero, ¿qué ocurre con la otra orden? La de `echo "Hello World"`...
 
-O si tenemos un día muy "verboso"... `ansible-playbook -vvv playbook.yml`{{execute}}
+Pues bien, se ha ejecutado, esto es cierto, pero no la hemos visto en nuestra ejecución de Ansible. Esto es así porque se ha ejecutado a través del módulo de la Shell, pero tal y como hemos ejecutado no vamos a poder ver el resultado.
+
+Si queremos ver más, tendremos que aplicarle niveles de "verbosidad" a través de la opción "-v"... Así: `ansible-playbook -v playbook.yml`{{execute}}
+
+O si tenemos un día muy "verboso"... `ansible-playbook -vvv playbook.yml`{{execute}} (depende de cuánto quieras ver).
+
+Si lo hacemos, veremos que se muestra a través de un *.json* el `echo "Hello"` como le habíamos dicho que hiciera.
  
 Si bien es cierto que aquí es bastante simple, pasad a imaginaros lo mismo pero con 50 tareas, todas totalmente distintas...
