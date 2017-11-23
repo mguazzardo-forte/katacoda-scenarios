@@ -16,10 +16,4 @@
 - **CMD**: Ejecutable, típicamente el arranque del servicio del propósito del contenedor.
 
 # Primeros comandos (Generar una imagen docker de Apache)
- - Generamos el archivo Dockerfile `touch Dockerfile`{{execute}}
- ``` 
-FROM centos:centos7
-RUN \
-    yum -y update; yum clean all; yum install -y httpd; yum clean all
-  
-``` 
+ - Se ha generado un Dockerfile para la creación de un contenedor apache en la ruta ./apache/Dockerfile. Para visualizar este archivo `cat ./apache/Dockerfile`{{execute}} Para generar la imagen de este contenededor se debe ejectutar el comando build. Para dar un nombre a la imagen a generar se  introduce la opción -t (nommbre:version) `docker build -t apache:v1 ./apache/Dockerfile`{{execute}}
