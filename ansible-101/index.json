@@ -38,6 +38,7 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
+    "uisettings": "yaml",
     "icon": "fa-ansible",
     "uimessage1": "\u001b[32mÉsta es tu terminal del curso.\r\nEscribe aquí tus comandos\u001b[m\r\n"
   },
