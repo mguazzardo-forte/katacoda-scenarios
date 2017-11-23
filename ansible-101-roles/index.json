@@ -10,6 +10,7 @@
   "environment": {
     "uilayout": "editor-terminal",
     "icon": "fa-ansible",
+    "uisettings": "yaml",
     "uimessage1": "\u001b[32mEsta es tu terminal del curso.\r\nEscribe aqui tus comandos\u001b[m\r\n"
   },
   "details": {
