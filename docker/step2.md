@@ -19,5 +19,5 @@
  - Se ha generado un Dockerfile para la creación de un contenedor apache en la ruta ./apache/Dockerfile. Para visualizar este archivo `cat ./apache/Dockerfile`{{execute}} Para generar la imagen de este contenededor se debe ejectutar el comando build. Para dar un nombre a la imagen a generar se  introduce la opción -t (nommbre:version) `docker build -t apache:v1 ./apache`{{execute}}
 - Al final la generación de la imagen, se puede observar que se encuentra registrada en nuestro repositorio interno de docker. `docker images `{{execute}}
  - Para desplegar el contenedor se debe ejecutar el comando docker run y posteriormente mapear el puerto entre el host y el servicio dentro del contenedor `docker run -d -p 80:80 apache:v1`{{execute}}. La opción -d corresponde a ejecutarlo en background.
- - Con el comando `docker ps`{{execute}} se observa los contenedores desplegados.
+ - Con el comando `docker ps`{{execute}} se observa los contenedores en ejecución.
  
