@@ -22,7 +22,7 @@
     },
     "assets": { 
       "client": [{
-        "file": "Dockerfile", 
+        "file": "apache", 
         "target": "/home/scrapbook/tutorial/"
       }]
      }
