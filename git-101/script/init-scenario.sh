@@ -1,1 +1,2 @@
 mkdir /home/scrapbook/tutorial/git/sample-app/src/main/java/com/example/app && mkdir /home/scrapbook/tutorial/git/sample-app/src/test/main/java/com/example/app
+mkdir /s/my-remote && git clone https://github.com/devopstf/sample-remote.git && mv sample-remote/.git/* /s/my-remote/ && rm -Rf sample-remote/
