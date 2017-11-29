@@ -43,7 +43,7 @@
     },
     "assets": { 
       "client": [{
-        "file": "/src/main/java/com/example/app/App.java", 
+        "file": "./src/main/java/com/example/app/App.java", 
         "target": "/home/scrapbook/tutorial/git/sample-app/src/main/java/com/example/app/"
       }, {
         "file": "*", 
