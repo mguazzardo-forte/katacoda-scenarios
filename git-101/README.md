@@ -1,4 +1,4 @@
-# Ansible 101 - Roles (DevOpsTF)
+# Git 101 (DevOpsTF)
 Aquí se encuentran todos los recursos del curso interactivo de Git básico, preparado por el grupo @devopstf y al que se puede acceder a través del siguiente [enlace](https://katacoda.com/devopstf/scenarios/git-101).
 
 ## Distribución de carpetas

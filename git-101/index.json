@@ -5,7 +5,7 @@
   "difficulty": "Principiante",
   "time": "15 minutes",
   "backend": {
-    "imageid": "git"
+    "imageid": "centos"
   },
   "environment": {
     "uilayout": "editor-terminal",
