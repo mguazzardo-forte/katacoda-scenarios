@@ -1,0 +1,54 @@
+{
+  "pathwayTitle": "DevOps 101 - Tenerife",
+  "title": "Git 101",
+  "description": "Aprende los fundamentos del sistema de control de versiones estándar de facto en el mundo OpenSource",
+  "difficulty": "Principiante",
+  "time": "15 minutes",
+  "backend": {
+    "imageid": "git"
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "icon": "fa-terminal",
+    "uisettings": "xml",
+    "uimessage1": "\u001b[32mEsta es tu terminal del curso.\r\nEscribe aqui tus comandos\u001b[m\r\n"
+  },
+  "details": {
+    "steps": [{
+      	"title": "Inicializar tu repositorio",
+      	"text": "steps/step1.md"
+      }, {
+      	"title": "Crear un README en condiciones y un fichero .gitignore",
+      	"text": "steps/step2.md"
+      }, {
+      	"title": "Trabajar en remoto",
+      	"text": "steps/step3.md"
+      }, {
+      	"title": "Trabajar con ramas",
+      	"text": "steps/step4.md"
+      }, {
+       	"title": "Mezclar código",
+      	"text": "steps/step5.md"
+      }, {
+        "title": "El siguiente paso te toca darlo a tí.",
+        "text": "steps/step6.md"
+      }],
+    "intro": {
+      "text": "stages/intro.md",
+      "credits": "DevOps TF - Antonio Fumero",
+      "courseData": "script/init-scenario.sh"
+    },
+    "finish": {
+      "text": "stages/finish.md"
+    },
+    "assets": { 
+      "client": [{
+        "file": "/src/main/java/com/example/app/App.java", 
+        "target": "/home/scrapbook/tutorial/git/sample-app/src/main/java/com/example/app/"
+      }, {
+        "file": "*", 
+        "target": "/home/scrapbook/tutorial/git/sample-app/"
+      }] 
+    }
+  }
+}
