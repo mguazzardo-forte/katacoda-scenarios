@@ -1,4 +1,4 @@
-# Conceptos básicos
+**Git es un sistema de control de versiones que había ideado Linus Torvalds con la intención de distribuir sus proyectos relacionados con el kernel de Linux**; y se ha convertido en [un estándar](https://git-scm.com/).
 
 Tu repositorio local esta compuesto por **tres "árboles"** administrados por git.
 
