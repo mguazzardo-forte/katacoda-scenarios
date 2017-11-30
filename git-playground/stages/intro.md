@@ -1,6 +1,3 @@
-
-![Git SCM](https://git-scm.com/images/logo@2x.png)
-
 Por favor, **espera mientras se inicializa el Playground**.
 
 *Una vez veas que se crea el directorio "git" en tu ventana del IDE, ya podrás empezar a jugar.*
