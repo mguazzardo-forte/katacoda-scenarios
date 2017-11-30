@@ -32,6 +32,6 @@
       }, {
         "file": "pom.xml", 
         "target": "/home/scrapbook/tutorial/git/sample-app/"
-		}]
-  }}
+		}]}
+  }
 }
