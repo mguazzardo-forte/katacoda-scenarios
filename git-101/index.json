@@ -18,13 +18,13 @@
       	"title": "Conceptos básicos",
       	"text": "steps/step0.md"
       }, {
-        "title": "Inicializar tu repositorio",
+        "title": "Inicializa tu repositorio local",
         "text": "steps/step1.md"
       }, {
-      	"title": "Crear un README en condiciones y un fichero .gitignore",
+      	"title": "Los primeros cambios",
       	"text": "steps/step2.md"
       }, {
-      	"title": "Trabajar en remoto",
+      	"title": "Viajar en el tiempo",
       	"text": "steps/step3.md"
       }, {
       	"title": "Trabajar con ramas",
@@ -33,7 +33,7 @@
        	"title": "Mezclar código",
       	"text": "steps/step5.md"
       }, {
-        "title": "El siguiente paso te toca darlo a tí.",
+        "title": "El siguiente paso lo decides tú.",
         "text": "steps/step6.md"
       }],
     "intro": {
