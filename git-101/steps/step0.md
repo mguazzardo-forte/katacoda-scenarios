@@ -8,6 +8,14 @@ Tu repositorio local esta compuesto por **tres "árboles"** administrados por gi
 
 ![El flujo de trabajo habitual pasará tus cambios de tu directorio de trabajo al índice y de ahí al repositorio local](https://i.stack.imgur.com/NxTUz.png)
 
+Normalmente haremos un ``git add <filename>`` para añadir un fichero al índice (meterlo bajo control de versiones).
+
+A continuación lo subimos al repositorio local con la orden ``git commit -m "Comentario explicativo del cambio comprometido"``
+
+**Apunte Pro:** Para hacer los dos pasos en una sola orden usaremos: ``git commit -am "Comentario"``
+
+# Preparando el escenario
+
 Para hacer las veces de repositorio remoto, crearemos un directorio vacío en otro directorio:`mkdir /home/scrapbook/tutorial/git/my-remote`{{execute}}
 
 Lo inicializamos como repositorio _Git_: `cd /home/scrapbook/tutorial/git/my-remote && git --bare init`{{execute}}

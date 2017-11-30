@@ -8,7 +8,7 @@ En el repositorio puedes encontrar una sencilla aplicación, ``App.java``
 y sus correspondientes pruebas unitrarias; además del fichero pom.xml para _Maven_
 ```
 
-Si te sitúas en el directorio donde tienes tu aplicación: `cd /home/scrapbook/tutorial/git/sample-app && ls -ltra`{{execute}}
+Si te sitúas en el directorio donde tienes tu aplicación: `cd /home/scrapbook/tutorial/git/sample-app`{{execute}}
 
 Puedes crear el fichero: `touch README.md`{{execute}}
 
@@ -19,61 +19,13 @@ qué archivos queremos que Git ignore, es decir que no los registre como parte d
 de ese tipo de archivos, por ejemplo archivos temporales ``*.tmp``, logs, resultados de la compilación de nuestra aplicación, i.e. la carpeta ``/target``
 o los ficheros propios de nuestro IDE, por ejemplo el ``.project`` de _Eclipse_.
 
-Vemos un ejemplo para Java que podemos copiar y pegar en el editor después de crear el fichero: `touch .gitignore`{{execute}}
+Creamos el fichero: `touch .gitignore`{{execute}}
 
-```
-######################
-# Directories #
-######################
+Metemos esos patrones básicos:
 
-build/
-bin/
-target/
-libs/
-tmp/
-jaxws/jaxws-client/src/main/
-
-######################
-# Package Files #
-######################
-
-*.jar
-*.war
-*.ear
-*.db
-*.zip
-*.tar.gz
-*.rar
-
-######################
-# Compiled class file
-######################
-
-*.class
-
-######################
-# Log file
-######################
-
-*.log
-
-######################
-# Eclipse
-######################
- 
-*.pydevproject
-/.project
-.metadata
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.classpath
-.project
-.settings/
-.loadpath
-```
+* Los directorios: `echo "tmp/" > .gitignore && echo "target/" >> .gitignore`{{execute}}
+* Los ficheros empaquetados: `echo "*.jar" >> .gitignore && echo "*.war" >> .gitignore`{{execute}}
+* Los ficheros del Eclipse: `echo ".project" >> .gitignore`{{execute}}
 
 Una vez hemos creado estos dos ficheros, Git aún no los tendrá registrados en el control de versiones: `git status`{{execute}}
 

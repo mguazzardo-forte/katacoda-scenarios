@@ -1,4 +1,4 @@
-Nos situaremos en el directorio donde tenemos nuestra aplicación: `cd /home/scrapbook/tutorial/git/sample-app && ls -ltra`{{execute}}
+Nos situaremos en el directorio donde tenemos nuestra aplicación: `cd /home/scrapbook/tutorial/git/sample-app`{{execute}}
 
 Lo primero que haremos es inicializar nuestro repositorio local: `git init`{{execute}}
 

@@ -12,6 +12,10 @@ Podemos ver en qué rama estamos con: `git branch`{{execute}}
 
 Podemos crear una rama para pruebas, que se llame "test": `git branch test`{{execute}}
 
+Nos cambiamos a la rama que hemos creado: `git checkout test`{{execute}}
+
+**Apunte Pro:** Podemos crear la rama y cambiarnos a ella con ``git checkout -b <branch-name>``
+
 Supongamos que tocamos el fichero ``pom.xml`` en esta rama: `echo "# Cambiando un fichero existente" >> pom.xml`{{execute}}
 
 Nos cambiamos a la rama "master": `git checkout master`{{execute}}
