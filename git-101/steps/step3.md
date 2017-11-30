@@ -2,7 +2,7 @@ En caso de que hagas algo mal o cambies de opinión, puedes reemplazar cambios l
 
 Este comando reemplaza los cambios en tu directorio de trabajo con el último contenido de HEAD (el puntero que Git mantiene al último cambio comprometido en el repositorio local. Los cambios que ya han sido agregados al _Index_, así como también los nuevos archivos, se mantendrán sin cambio.
 
-Si estás en medio de un _commit_ y tienes cambios registrados por el índice, es decir en la _Staging Area_, puedes revertirlos con ``git reset``
+Si estás en medio de un _commit_ y tienes cambios registrados por el índice, es decir en la _Staging Area_, ![puedes revertirlos con ``git reset``](https://i.stack.imgur.com/RPeKg.png)
 
 Por otro lado, si quieres deshacer todos los cambios locales y _commits_, puedes traer la última versión del repositorio remoto y apuntar a tu copia local principal: `git fetch origin`{{execute}}
 

@@ -18,14 +18,16 @@ Nos cambiamos a la rama que hemos creado: `git checkout test`{{execute}}
 
 Supongamos que tocamos el fichero ``pom.xml`` en esta rama: `echo "# Cambiando un fichero existente" >> pom.xml`{{execute}}
 
+Comprometemos los cambios en el repositorio local: `git commit -am "Modificamos en pom.xml"`{{execute}}
+
 Nos cambiamos a la rama "master": `git checkout master`{{execute}}
+
+Antes de fusionar los cambios, puedes revisarlos usando `git diff test master`{{execute}}
 
 Mezclamos el código de la rama "test": `git merge test`{{execute}}
 
-Git intentará fusionar automáticamente los cambios. Desafortunadamente, no siempre será posible y se podrán producir conflictos.
+**Apunte Pro:** Git intentará fusionar automáticamente los cambios. Desafortunadamente, no siempre será posible y se podrán producir conflictos.
 
 En esos casos, tú eres responsable de solventar esos conflictos manualmente editando los archivos.
 
 Después de modificarlos, necesitas marcarlos como fusionados con ``git add <filename>``
-
-Antes de fusionar los cambios, puedes revisarlos usando ``git diff <source_branch> <target_branch>``
