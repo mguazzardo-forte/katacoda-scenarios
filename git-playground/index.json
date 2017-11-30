@@ -21,6 +21,17 @@
       "text": "stages/intro.md",
       "credits": "DevOps TF - Antonio Fumero",
       "courseData": "scripts/init-scenario.sh"
-    }
+    },
+	"assets": { 
+      "client": [{
+        "file": "App.java", 
+        "target": "/home/scrapbook/tutorial/git/sample-app/src/main/java/com/example/app/"
+      }, {
+        "file": "AppTest.java", 
+        "target": "/home/scrapbook/tutorial/git/sample-app/src/test/java/com/example/app/"
+      }, {
+        "file": "pom.xml", 
+        "target": "/home/scrapbook/tutorial/git/sample-app/"
+		}]
   }
 }
