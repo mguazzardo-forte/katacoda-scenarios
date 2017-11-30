@@ -5,7 +5,7 @@
   "difficulty": "Principiante",
   "time": "15 minutes",
   "backend": {
-    "imageid": "centos"
+    "imageid": "git"
   },
   "environment": {
     "uilayout": "editor-terminal",
@@ -15,8 +15,11 @@
   },
   "details": {
     "steps": [{
-      	"title": "Inicializar tu repositorio",
-      	"text": "steps/step1.md"
+      	"title": "Conceptos básicos",
+      	"text": "steps/step0.md"
+      }, {
+        "title": "Inicializar tu repositorio",
+        "text": "steps/step1.md"
       }, {
       	"title": "Crear un README en condiciones y un fichero .gitignore",
       	"text": "steps/step2.md"

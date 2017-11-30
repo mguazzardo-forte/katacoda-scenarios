@@ -1,30 +1,85 @@
-El directorio 'templates' **se encarga de albergar los diferentes ficheros que sirven como plantillas para el rol de Ansible**. A través del lenguaje de plantillas [Jinja 2](http://jinja.pocoo.org/docs/2.10/), especialmente diseñado para Python, podremos crear plantillas rápidas y fáciles de entender por cualquier persona, con ejecución aislada y muy fácil de debuggear en caso de cualquier problema.
+Es importante añadir a nuestro repositorio **un fichero README** en condiciones, es decir suficientemente descriptivo, con el objetivo
+de que cualquier miembro del equipo entienda lo que tiene entre manos...
 
-# ¿Cuál es su utilidad?
+```
+# Aplicación Java de ejemplo
 
-Generalmente este directorio de plantillas **se suele utilizar a la hora de configurar máquinas que necesitan de ficheros de configuración que podrían verse alterados**. También se puede utilizar para **generar imágenes Docker con una versión específica** (que colocaríamos en el Dockerfile generado a través de Jinja 2) **o con un hostname específico para el contenedor**, etc...
-
-El límite realmente lo pone tu imaginación.
-
-Con él podemos crear un rol independiente cuyo resultado variará según la ejecución. 
-
-# Creando nuestra plantilla
-
-En nuestro caso de ejemplo no tenemos mucho que crear, pero es totalmente posible colocar tantos ficheros como queramos en este directorio. Como nosotros no necesitamos más que uno, vamos a crearlo ya mismo: `touch roles/katacoder/templates/tarjeta.j2`{{execute}}
-
-Y la vamos a rellenar de la siguiente manera, siguiendo nuestra idea:
-
-```jinja2
---- TARJETA IDENTIFICATIVA DE MASCOTA
-- Nombre: {{ nombre }}
-- Genero: {{ genero }}
-- Reproduccion: {{ tipo }}
-- Alimentacion: {{ comida }}
-- Fecha de nacimiento: {{ nacimiento }}
+En el repositorio puedes encontrar una sencilla aplicación, ``App.java``
+y sus correspondientes pruebas unitrarias; además del fichero pom.xml para _Maven_
 ```
 
-Como se puede apreciar, **las variables para Ansible han de ser definidas de esta manera, con los "{{ }}" alrededor y sus correspondientes espacios**. Esto es muy importante por que de lo contrario Ansible se va a quejar de que algo está mal escrito.
+Si te sitúas en el directorio donde tienes tu aplicación: `cd /home/scrapbook/tutorial/git/sample-app && ls -ltra`{{execute}}
 
-Más adelante haremos referencia a esta plantilla, pero por ahora ya hemos terminado con esta parte.
+Puedes crear el fichero: `touch README.md`{{execute}}
 
-Continuemos...
+y copiar el contenido de arriba en el editor.
+
+Otro punto relevante cuando empezamos a trabajar con un repositorio en Git es añadir un fichero ``.gitignore``, que servirá para especificar
+qué archivos queremos que Git ignore, es decir que no los registre como parte de su control de versiones. Este fichero incluirá los patrones
+de ese tipo de archivos, por ejemplo archivos temporales ``*.tmp``, logs, resultados de la compilación de nuestra aplicación, i.e. la carpeta ``/target``
+o los ficheros propios de nuestro IDE, por ejemplo el ``.project`` de _Eclipse_.
+
+Vemos un ejemplo para Java que podemos copiar y pegar en el editor después de crear el fichero: `touch .gitignore`{{execute}}
+
+```
+######################
+# Directories #
+######################
+
+build/
+bin/
+target/
+libs/
+tmp/
+jaxws/jaxws-client/src/main/
+
+######################
+# Package Files #
+######################
+
+*.jar
+*.war
+*.ear
+*.db
+*.zip
+*.tar.gz
+*.rar
+
+######################
+# Compiled class file
+######################
+
+*.class
+
+######################
+# Log file
+######################
+
+*.log
+
+######################
+# Eclipse
+######################
+ 
+*.pydevproject
+/.project
+.metadata
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.project
+.settings/
+.loadpath
+```
+
+Una vez hemos creado estos dos ficheros, Git aún no los tendrá registrados en el control de versiones: `git status`{{execute}}
+
+Tendremos que añadirlos al "índice" con la siguiente sentencia: `git add . `{{execute}}
+
+y pasarlos al repositorio local: `git commit -m "Creados los ficheros README y .gitignore estándar para Java"`{{execute}}
+
+Es **muy importante** añadir a cada ``commit`` un comentario suficientemente significativo, de tal manera que cualquier miembro del equipo
+pueda saber qué hemos hecho con cada cambio registrado en el repositorio.
