@@ -8,10 +8,9 @@ Es habitual disponer de ramas para diferentes conjuntos de funcionalidades, o pa
 
 **Es importante** para la organización del equipo de desarrollo definir [una estrategia de ramas clara](http://nvie.com/posts/a-successful-git-branching-model/): las **buenas prácticas** aconsejan disponer, al menos, de **una rama de desarrollo** (_dev_) y/o una rama por cada desarrollador. Normalmente se desarrollará sobre esas ramas y se mezclará código en la rama _master_ cuando esté terminado.
 
-Esas buenas prácticas se han terminado implementando como herramienta para el desarrollador que se integra en los IDE más conocidos; y se conoce como [GitFlow](https://danielkummer.github.io/git-flow-cheatsheet/)
+![El flujo habitual para, por ejemplo, desarrollar una nueva funcionalidad sería:](https://i.stack.imgur.com/F00b8.png)
 
-![El flujo habitual para, por ejemplo, desarrollar una nueva funcionalidad sería:](http://rogerdudler.github.io/git-guide/img/branches.png)
-
+* Te situas en el directorio donde tenemos nuestra aplicación: `cd /home/scrapbook/tutorial/git/sample-app && ls -ltra`{{execute}}
 * Crea una nueva rama llamada "feature_x" y cámbiate a ella usando: `git checkout -b feature_x`{{execute}}
 * Haz los cambios que te toquen: `touch changes.md && echo "feature_x" > changes.md`{{execute}}
 * Sube los cambios en local: `git add . && git commit -m "Terminada la Funcionalidad X"`{{execute}}

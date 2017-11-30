@@ -6,4 +6,12 @@ Tu repositorio local esta compuesto por **tres "árboles"** administrados por gi
 * El segundo es el **Index** (_Staging Area_) que actua como una zona intermedia.
 * El último es el **HEAD** que apunta al último ``commit`` realizado sobre el repositorio local.
 
-![El flujo de trabajo habitual pasará tus cambios de tu directorio de trabajo al índice y de ahí al repositorio local](http://rogerdudler.github.io/git-guide/img/trees.png)
+![El flujo de trabajo habitual pasará tus cambios de tu directorio de trabajo al índice y de ahí al repositorio local](https://i.stack.imgur.com/NxTUz.png)
+
+Para hacer las veces de repositorio remoto, crearemos un directorio vacío en otro directorio:`mkdir /home/scrapbook/tutorial/git/my-remote`{{execute}}
+
+Lo inicializamos como repositorio _Git_: `cd /home/scrapbook/tutorial/git/my-remote && git --bare init`{{execute}}
+
+También hemos creado un directorio con una sencilla aplicación _Java_ de ejemplo: `cd /home/scrapbook/tutorial/git/sample-app && ls -ltra`{{execute}}
+
+Partiremos de este directorio, que puedes ver en el IDE, para ir progresando por este escenario.

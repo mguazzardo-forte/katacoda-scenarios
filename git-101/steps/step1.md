@@ -1,15 +1,10 @@
-**Git es un sistema de control de versiones que había ideado Linus Torvalds con la intención de distribuir sus proyectos relacionados con el kernel de Linux**; y se ha convertido en [un estándar](https://git-scm.com/).
+Nos situaremos en el directorio donde tenemos nuestra aplicación: `cd /home/scrapbook/tutorial/git/sample-app && ls -ltra`{{execute}}
 
-Para hacer las veces de repositorio remoto crearemos un repositorio vacío en otro directorio:`mkdir /home/scrapbook/tutorial/git/my-remote`{{execute}}
-y lo inicializamos: `cd /home/scrapbook/tutorial/git/my-remote && git --bare init`{{execute}}
-
-Hemos creado un directorio con una sencilla aplicación java de ejemplo: `cd /home/scrapbook/tutorial/git/sample-app && ls -ltra`{{execute}}
-
-Lo primero que haremos es inicializar nuestro repositorio: `git init`{{execute}}
+Lo primero que haremos es inicializar nuestro repositorio local: `git init`{{execute}}
 
 Vemos como se ha generado un directorio oculto: `ls -ltra .git`{{execute}}
 
-Dentro de ese directorio oculto es donde _Git_ mantiene los objetos que identifican su propio sistema de ficheros.
+Dentro de ese directorio oculto es donde _Git_ mantiene los objetos que identifican su propio sistema de ficheros y las referencias a los tres "árboles" de los que habábamos en el paso anterior.
 
 Veamos en qué situación estamos: `git status`{{execute}}
 
