@@ -1,4 +1,4 @@
-![Work in Progress](http://i.stack.imgur.com/kmfPT.png)
+![Work in Progress](https://www.pictofigo.com/dynamic-image/uploads/pictures/0/3281/thumb-under-construction-pictofigo-hi-019.png)
 
 # ¿Qué es Docker?
 Docker es un proyecto de código abierto que automatiza el **despliegue de aplicaciones dentro de contenedores de software**, proporcionando una capa adicional de **abstracción y automatización de Virtualización** a nivel de sistema operativo en Linux. Docker utiliza características de **aislamiento de recursos del kernel de Linux**, tales como cgroups y espacios de nombres (namespaces) para permitir que "contenedores" independientes se ejecuten dentro de una sola instancia de Linux, evitando la sobrecarga de iniciar y mantener máquinas virtuales, o así es como se describe en la Wikipedia.
