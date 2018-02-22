@@ -6,7 +6,7 @@
 	"time": "25 minutes",
 	"backend": {
 		"imageid": "jenkins",
-		"port": 8080	
+		"port": 8080
 	},
 	"environment": {
 		"showdashboard": true,
@@ -15,14 +15,12 @@
 		"uimessage1": "\u001b[32mBash interactiva; por favor, utiliza la pestaña de Jenkins!\u001b[m\r\n"
 	},
 	"details": {
-		"steps": [
-			{
-				"title": "TEST",
-				"text": "steps/step1.md"
-			}
-		],
+		"steps": [{
+			"title": "TEST",
+			"text": "steps/step1.md"
+		}],
 		"finish": {
-      			"text": "stages/finish.md"
-    		}
-	},
+			"text": "stages/finish.md"
+		}
+	}
 }
