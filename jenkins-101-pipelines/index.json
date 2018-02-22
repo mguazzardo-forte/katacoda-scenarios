@@ -1,0 +1,28 @@
+{
+	"pathwayTitle": "DevOps 101 - Tenerife",
+	"title": "Jenkins 101 y los Pipelines declarativos",
+	"description": "Un pequeño paseo por las ventajas de utilizar pipelines declarativos en Jenkins",
+	"difficulty": "Principiante-Intermedio",
+	"time": "25 minutes",
+	"backend": {
+		"imageid": "jenkins",
+		"port": 8080	
+	},
+	"environment": {
+		"showdashboard": true,
+		"dashboard": "Jenkins",
+		"uilayout": "terminal-iframe",
+		"uimessage1": "\u001b[32mBash interactiva; por favor, utiliza la pestaña de Jenkins!\u001b[m\r\n"
+	},
+	"details": {
+		"steps": [
+			{
+				"title": "TEST",
+				"text": "steps/step1.md"
+			}
+		],
+		"finish": {
+      		"text": "stages/finish.md"
+    	}
+	},
+}
