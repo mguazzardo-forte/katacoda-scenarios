@@ -31,6 +31,9 @@
       }, {
         "file": "website/index.html",
         "target": "/home/scrapbook/tutorial/website/"
+        }, {
+        "file": "training-samples.zip",
+        "target": "/home/scrapbook/tutorial/"
       }]
      }
   },
