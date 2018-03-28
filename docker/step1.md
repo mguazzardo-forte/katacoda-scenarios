@@ -2,7 +2,7 @@ Para este curso vamos a utilizar una máquina **Ubuntu**, distribución que suel
 
 La máquina viene con docker instalado. En el caso que necesitemos instalar en otro entorno ejecutaríamos el siguiente comand: apt-get install docker. Posiblemente, debamos ininicar el servicio una vez instalado, para ello ejecutaremos service docker start.
 
-Lo primero que haremos es descomprimir los ficheros de los ejemplos que iremos recorriendo en este escenario: lo haremos ejecutanto ``apt install -y unzip && cd /home/scrapbook/tutorial/ && unzip training-samples.zip && rm training-samples.zip``{{execute}}
+Lo primero que haremos es clonar los ficheros de los ejemplos que iremos recorriendo en este escenario: lo haremos ejecutanto ``git clone https://github.com/devopstf/training-setup.git``{{execute}}
 
 # Arquitectura Docker.
 
