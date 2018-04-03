@@ -58,7 +58,7 @@
       }, {
         "file": "website/index.html",
         "target": "/home/scrapbook/tutorial/website/"
-      }]
+      }],
 	  "host01": [{
         "file": "apache/Dockerfile", 
         "target": "/home/scrapbook/tutorial/apache/"
