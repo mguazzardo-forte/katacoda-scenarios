@@ -58,27 +58,13 @@
       }, {
         "file": "website/index.html",
         "target": "/home/scrapbook/tutorial/website/"
-      }],
-	  "host01": [{
-        "file": "apache/Dockerfile", 
-        "target": "/home/scrapbook/tutorial/apache/"
-      }, {
-        "file": "website/index.html",
-        "target": "/home/scrapbook/tutorial/website/"
-      }],
-	  "host02": [{
-        "file": "apache/Dockerfile", 
-        "target": "/home/scrapbook/tutorial/apache/"
-      }, {
-        "file": "website/index.html",
-        "target": "/home/scrapbook/tutorial/website/"
       }]
      }
   },
   "environment": {
     "showdashboard": true,
 	"uilayout": "terminal-terminal",
-    "uimessage1": "\u001b[32mÉsta es tu terminal del curso.\u001b[m\r\n"
+    "uimessage1": "\u001b[32mThis is your bash terminal...\u001b[m\r\n"
   },
   "backend": {
     "imageid": "docker"
