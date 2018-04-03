@@ -2,7 +2,10 @@
 
 Nos situamos en el directorio del ejercicio ``cd /home/scrapbook/tutorial/training-setup/training-samples/6-swarm-sample``{{execute}}
 
-- En el diagrama architecture.png se puede ver cómo interactúan los cinco servicios que componen la aplicación.
+- En el diagrama se puede ver cómo interactúan los cinco servicios que componen la aplicación.
+
+![Arquitectura](https://cdn-images-1.medium.com/max/1024/0*LaLpavOVZGWNiLI_.)
+
 - Todas las imágenes están en _Docker Hub_
 - Necesitaremos dos redes superpuestas, `backend` y `frontend`, básicamente para que los datos no están accesibles desde el front-end web.
 - La persistencia para la BB.DD. la configuramos con: `--mount type=volume,source=db-data,target=/var/lib/postgresql/data`
