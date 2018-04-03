@@ -67,6 +67,6 @@
     "uimessage1": "\u001b[32mThis is your bash terminal...\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "docker"
+    "imageid": "docker-swarm"
   }
 }
