@@ -1,5 +1,3 @@
-# Ejercicio práctico: aprender a gestionar el despliegue de varios contenedores
-
 ## Objetivo: repasar la ejecución básica de contenedores con varios servicios.
 
 - Levantaremos tres servidores: un `nginx` que nos hará de proxy, `mysql` como BB.DD., y un servidor web con Apache `httpd`.
