@@ -17,7 +17,31 @@
      {
       "title": "Preparándonos para utilizar Docker",
       "text": "step3.md"
-      }       
+      },       
+     {
+      "title": "Ejercicio práctico: despliegue de varios contenedores",
+      "text": "step4.md"
+      },       
+     {
+      "title": "Ejercicio práctico: volúmenes persistentes",
+      "text": "step5.md"
+      },       
+     {
+      "title": "Ejercicio práctico: creando un Dockerfile",
+      "text": "step6.md"
+      },       
+     {
+      "title": "Ejercicio práctico: fichero para docker-compose",
+      "text": "step7.md"
+      },       
+     {
+      "title": "Ejercicio práctico: escenario multi-contenedor",
+      "text": "step8.md"
+      },       
+     {
+      "title": "Ejercicio práctico: aplicación multiservicio",
+      "text": "step9.md"
+      },       
       
     ],
     "intro": {
