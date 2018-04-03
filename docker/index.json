@@ -8,48 +8,49 @@
      "steps": [
       {
       "title": "Preparándonos para utilizar Docker",
-      "text": "step1.md"
+      "text": "steps/step1.md"
       },
      {
       "title": "Preparándonos para utilizar Docker",
-      "text": "step2.md"
+      "text": "steps/step2.md"
       },
      {
       "title": "Preparándonos para utilizar Docker",
-      "text": "step3.md"
+      "text": "steps/step3.md"
       },       
      {
       "title": "Ejercicio práctico: despliegue de varios contenedores",
-      "text": "step4.md"
+      "text": "steps/step4.md"
       },       
      {
       "title": "Ejercicio práctico: volúmenes persistentes",
-      "text": "step5.md"
+      "text": "steps/step5.md"
       },       
      {
       "title": "Ejercicio práctico: creando un Dockerfile",
-      "text": "step6.md"
+      "text": "steps/step6.md"
       },       
      {
       "title": "Ejercicio práctico: fichero para docker-compose",
-      "text": "step7.md"
+      "text": "steps/step7.md"
       },       
      {
       "title": "Ejercicio práctico: escenario multi-contenedor",
-      "text": "step8.md"
+      "text": "steps/step8.md"
       },       
      {
       "title": "Ejercicio práctico: aplicación multiservicio",
-      "text": "step9.md"
+      "text": "steps/step9.md"
       }       
       
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "stages/intro.md",
       "credits": ""
     },
     "finish": {
-      "text": "finish.md"
+      "text": "stages/finish.md"
+	  "credits": ""
     },
     "assets": { 
       "client": [{
