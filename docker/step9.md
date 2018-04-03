@@ -1,6 +1,6 @@
 ## Objetivo: crear redes, volúmenes y servicios para desplegar una aplicación de ejemplo "cats vs dogs.
 
-Nos situamos en el directorio del ejercicio cd training-setup/training-samples/6-swarm-sample{{execute}}
+Nos situamos en el directorio del ejercicio ``cd /home/scrapbook/tutorial/training-setup/training-samples/6-swarm-sample``{{execute}}
 
 - En el diagrama architecture.png se puede ver cómo interactúan los cinco servicios que componen la aplicación.
 - Todas las imágenes están en _Docker Hub_
