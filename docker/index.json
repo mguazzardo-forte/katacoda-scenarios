@@ -41,8 +41,7 @@
      {
       "title": "Ejercicio práctico: aplicación multiservicio",
       "text": "steps/step9.md"
-      }       
-      
+      }     
     ],
     "intro": {
       "text": "stages/intro.md",
@@ -70,8 +69,6 @@
      }
   },
   "environment": {
-	"showdashboard": true,
-    "dashboards": [{"name": "Tab Name", "port": 80}, {"name": "Tab Name", "port": 8080}],
     "uilayout": "terminal-terminal",
     "uimessage1": "\u001b[32mÉsta es tu terminal del curso.\r\nEscribe aquí tus comandos\u001b[m\r\n"
   },
