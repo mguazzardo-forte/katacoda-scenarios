@@ -1,6 +1,6 @@
 ## Objetivo: Crear un _script_ para levantar una instalación en local del CMS Drupal
 
-Nos situamos en el directorio del ejercicio cd training-setup/training-samples/4-compose-sample{{execute}}
+Nos situamos en el directorio del ejercicio ``cd /home/scrapbook/tutorial/training-setup/training-samples/4-compose-sample``{{execute}}
 
 - Editaremos el fichero docker-compose.yml que hay en la carpeta.
 - Usaremos las imágenes oficiales de `drupal` y `postgres` de _Docker Hub_.
