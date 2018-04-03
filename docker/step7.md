@@ -1,5 +1,3 @@
-# Ejercicio práctico: escribir un fichero para docker-compose
-
 ## Objetivo: Crear un _script_ para levantar una instalación en local del CMS Drupal
 
 - Editaremos el fichero docker-compose.yml que hay en la carpeta.
