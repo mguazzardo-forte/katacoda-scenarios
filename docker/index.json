@@ -48,6 +48,9 @@
       "text": "intro.md",
       "credits": ""
     },
+    "finish": {
+      "text": "finish.md"
+    },
     "assets": { 
       "client": [{
         "file": "apache/Dockerfile", 
