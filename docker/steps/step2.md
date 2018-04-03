@@ -1,6 +1,8 @@
 
 # Objetos de Docker
 
+![Flujo y relaciones de los objetos en Docker](https://docs.docker.com/engine/images/engine-components-flow.png)
+
 **Dockerfile Referencias de Commandos**: 
 - **FROM**: Indica de que imagen base con la que se contruye la imagen
 - **MAINTAINER**: Autor
