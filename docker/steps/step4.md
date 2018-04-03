@@ -1,6 +1,6 @@
 ## Objetivo: repasar la ejecución básica de contenedores con varios servicios.
 
-Nos situamos en el directorio del ejercicio ``cd /home/scrapbook/tutorial/training-setup/training-samples/1-multiple-containers-sample``{{execute}}
+Nos situamos en el directorio del ejercicio ``cd /home/scrapbook/tutorial/training-setup/training-samples/1-multiple-containers-sample && ll``{{execute}}
 
 - Levantaremos tres servidores: un `nginx` que nos hará de proxy, `mysql` como BB.DD., y un servidor web con Apache `httpd`.
 - Los levantaremos en modo `--detached`, y les pondremos nombre `--name`.

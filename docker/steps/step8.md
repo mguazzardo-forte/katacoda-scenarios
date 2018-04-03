@@ -1,6 +1,6 @@
 ## Objetivo: configurar un entorno para un desarrollador que tiene que ponerse las pilas con la administración de un CMS Drupal, o que tiene que probarun tema nuevo para este gestor de contenidos.
 
-Nos situamos en el directorio del ejercicio ``cd /home/scrapbook/tutorial/training-setup/training-samples/5-compose-sample-custom``{{execute}}
+Nos situamos en el directorio del ejercicio ``cd /home/scrapbook/tutorial/training-setup/training-samples/5-compose-sample-custom && ll``{{execute}}
 
 - Lo configuraremos de forma que podamos construir nuestra imagen a medida con `docker compose up -d`, incluyendo la persistencia de los datos y la configuración que necesitemos cada vez que lancemos el _script_.
 - Partiremos del _script_ que desarrollamos para la tarea anterior basándonos en Drupal y PostgreSQL.

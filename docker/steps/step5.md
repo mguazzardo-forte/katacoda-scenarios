@@ -1,6 +1,6 @@
 ## Objetivo: actualización del motor de BB.DD. sin perder información
 
-Nos situamos en el directorio del ejercicio ``cd /home/scrapbook/tutorial/training-setup/training-samples/2-volumes-sample``{{execute}}
+Nos situamos en el directorio del ejercicio ``cd /home/scrapbook/tutorial/training-setup/training-samples/2-volumes-sample && ll``{{execute}}
 
 ## Indicaciones
 - Crearemos un contenedor `postgres` con un volumen `psql-data`, usando la imagen oficial `postgres 9.6.1`
