@@ -1,6 +1,6 @@
 Para este curso vamos a utilizar una máquina **Ubuntu**, distribución que suele utilizarse para crear entornos de producción y que cuenta con mucha documentación sobre cómo solucionar todo tipo de problemas.
 
-Lo primero que haremos es clonar los ficheros de los ejemplos que iremos recorriendo en este escenario: lo haremos ejecutanto ``git clone https://github.com/devopstf/training-setup.git``{{execute HOST2}}
+Lo primero que haremos es clonar los ficheros de los ejemplos que iremos recorriendo en este escenario: lo haremos ejecutanto ``git clone https://github.com/devopstf/training-setup.git``{{execute HOST1}}
 
 En este escenario introductorio, repasaremos los conceptos básicos de _Docker_ y recorreremos los ejemplos del repositorio que acabamos de clonar y que se encuentran en el directorio ``cd /home/scrapbook/tutorial/training-setup/training-samples/ && ll``{{execute}}
 

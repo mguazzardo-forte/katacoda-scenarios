@@ -52,7 +52,14 @@
 	  "credits": ""
     },
     "assets": { 
-      "host01": [{
+      "client": [{
+        "file": "apache/Dockerfile", 
+        "target": "/home/scrapbook/tutorial/apache/"
+      }, {
+        "file": "website/index.html",
+        "target": "/home/scrapbook/tutorial/website/"
+      }]
+	  "host01": [{
         "file": "apache/Dockerfile", 
         "target": "/home/scrapbook/tutorial/apache/"
       }, {
@@ -69,10 +76,11 @@
      }
   },
   "environment": {
-    "uilayout": "terminal-terminal",
-    "uimessage1": "\u001b[32mÉsta es tu terminal del curso.\r\nEscribe aquí tus comandos\u001b[m\r\n"
+    "showdashboard": true,
+	"uilayout": "terminal-terminal",
+    "uimessage1": "\u001b[32mÉsta es tu terminal del curso.\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "docker"
+    "imageid": "swarm"
   }
 }
