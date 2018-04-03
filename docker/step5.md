@@ -1,5 +1,3 @@
-# Ejercicio práctico: crear volúmenes y etiquetarlos para gestionar la persistencia de contenedores
-
 ## Objetivo: actualización del motor de BB.DD. sin perder información
 
 ## Indicaciones
