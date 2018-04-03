@@ -53,7 +53,14 @@
 	  "credits": ""
     },
     "assets": { 
-      "client": [{
+      "host01": [{
+        "file": "apache/Dockerfile", 
+        "target": "/home/scrapbook/tutorial/apache/"
+      }, {
+        "file": "website/index.html",
+        "target": "/home/scrapbook/tutorial/website/"
+      }]
+	  "host02": [{
         "file": "apache/Dockerfile", 
         "target": "/home/scrapbook/tutorial/apache/"
       }, {
