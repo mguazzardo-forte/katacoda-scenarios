@@ -1,4 +1,6 @@
-## Objetivo: crear redes, volúmenes y servicios para desplegar una aplicación de ejemplo "_cats vs dogs_".
+## Objetivo:
+
+**Crear redes, volúmenes y servicios para desplegar una aplicación de ejemplo "_cats vs dogs_".**
 
 Antes que nada vamos a inicializar el modo _Swarm_ de _Docker_, ejecutando ``docker swarm init``{{execute}}
 Esto nos dejará con un _cluster_ que solo dispone de un nodo, que hace de líder y de _manager_, algo que podemos ver con la siguiente orden en línea, ``docker node ls``{{execute}}.

@@ -1,4 +1,6 @@
-## Objetivo: configurar un entorno para un desarrollador que tiene que ponerse las pilas con la administración de un CMS Drupal, o que tiene que probarun tema nuevo para este gestor de contenidos.
+## Objetivo:
+
+**Configurar un entorno para un desarrollador que tiene que ponerse las pilas con la administración de un CMS Drupal, o que tiene que probarun tema nuevo para este gestor de contenidos.**
 
 Nos situamos en el directorio del ejercicio ``cd /home/scrapbook/tutorial/training-setup/training-samples/5-compose-sample-custom && ll``{{execute}}
 

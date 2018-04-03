@@ -1,4 +1,6 @@
-## Objetivo: actualización del motor de BB.DD. sin perder información
+## Objetivo:
+
+**Actualización del motor de BB.DD. sin perder información.**
 
 Nos situamos en el directorio del ejercicio ``cd /home/scrapbook/tutorial/training-setup/training-samples/2-volumes-sample && ll``{{execute}}
 

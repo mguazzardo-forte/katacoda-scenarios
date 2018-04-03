@@ -1,4 +1,6 @@
-## Objetivo: repasar la ejecución básica de contenedores con varios servicios.
+## Objetivo:
+
+**Repasar la ejecución básica de contenedores con varios servicios.**
 
 Nos situamos en el directorio del ejercicio ``cd /home/scrapbook/tutorial/training-setup/training-samples/1-multiple-containers-sample && ll``{{execute}}
 
