@@ -1,5 +1,3 @@
-# Ejercicio práctico: desplegaremos una aplicación multiservicio en nuestro cluster
-
 ## Objetivo: crear redes, volúmenes y servicios para desplegar una aplicación de ejemplo "cats vs dogs.
 
 - En el diagrama architecture.png se puede ver cómo interactúan los cinco servicios que componen la aplicación.
