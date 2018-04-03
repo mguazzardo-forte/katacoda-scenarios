@@ -1,11 +1,11 @@
 # Objetos de Docker
 
 **Contenedor**: 
-Instancia “runnable” de la imagen. Se puede crear, desplegar, parar, mover y eliminar usando la API de Docker
+Instancia “ejecutable” de una imagen. Se puede crear, desplegar, parar, mover y eliminar usando la API de Docker
 
 ![Ciclo de vida de un contenedor](https://cdn-images-1.medium.com/max/1129/1*vca4e-SjpzSL5H401p4LCg.png)
 
-Comandos docker:
+Órdenes en línea para gestionar el ciclo de vida de un contenedor _docker_:
 - **build** ( Construir)
 - **run**  (Desplegar)
 - **ps**  (Listar  Contenedores)
@@ -14,7 +14,7 @@ Comandos docker:
 - **push** (Subir imagen)
 - **exec** (Interactuar con el contenedor)
 - **rmi** (Borrar Imagen)
-- **kill**  (Matar contenedor)
+- **kill** (Matar contenedor)
 
 - Se ha generado un Dockerfile para la creación de un contenedor apache en la ruta ./apache/Dockerfile. Para visualizar este archivo `cat ./apache/Dockerfile`{{execute}} Para generar la imagen de este contenededor se debe ejectutar el comando build. Para dar un nombre a la imagen a generar se  introduce la opción -t (nommbre:version) `docker build -t apache:v1 ./apache`{{execute}}
 - Al final la generación de la imagen, se puede observar que se encuentra registrada en nuestro repositorio interno de docker. `docker images `{{execute}}
