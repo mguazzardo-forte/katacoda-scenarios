@@ -4,11 +4,11 @@ MAINTAINER devopstenerife@gmail.com
 
 RUN yum -y update && \
     yum clean all && \
-    yum install -y httpd &&\
+    yum install -y nginx &&\
     yum clean all
 
-VOLUME /var/www/html
+VOLUME /usr/share/nginx/html
 
 EXPOSE 80
 
-CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
+CMD [ "nginx" ]
