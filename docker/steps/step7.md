@@ -1,6 +1,5 @@
-## Objetivo:
 
-**Crear un _script_ para levantar una instalación en local del CMS Drupal.**
+**Objetivo: Crear un _script_ para levantar una instalación en local del CMS Drupal.**
 
 Nos situamos en el directorio del ejercicio ``cd /home/scrapbook/tutorial/training-setup/training-samples/4-compose-sample && ll``{{execute}}
 

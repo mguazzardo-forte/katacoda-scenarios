@@ -1,6 +1,5 @@
-## Objetivo:
 
-**Desplegar una aplicación basada en microservicios.**
+**Objetivo: Desplegar una aplicación basada en microservicios.**
 
 Nos situamos en el directorio del ejercicio ``cd /home/scrapbook/tutorial/training-setup/training-samples/3-dockerfile-sample && ll``{{execute}}
 

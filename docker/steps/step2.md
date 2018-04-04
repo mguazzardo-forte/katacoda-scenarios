@@ -17,9 +17,13 @@
 - **ENTRYPOINT**: Permite configurar el contenedor en el despliegue.
 - **CMD**: Ejecutable, típicamente el arranque del servicio del propósito del contenedor.
 
-# Primeros comandos (Generar una imagen docker de Apache)
- - Se ha generado un Dockerfile para la creación de un contenedor apache en la ruta ./apache/Dockerfile. Para visualizar este archivo `cat ./apache/Dockerfile`{{execute}} Para generar la imagen de este contenededor se debe ejectutar el comando build. Para dar un nombre a la imagen a generar se  introduce la opción -t (nommbre:version) `docker build -t apache:v1 ./apache`{{execute}}
-- Al final la generación de la imagen, se puede observar que se encuentra registrada en nuestro repositorio interno de docker. `docker images `{{execute}}
- - Para desplegar el contenedor se debe ejecutar el comando docker run y posteriormente mapear el puerto entre el host y el servicio dentro del contenedor `docker run -d -p 80:80 --name apache_c1 apache:v1`{{execute}}. La opción -d corresponde a ejecutarlo en background.
- - Con el comando `docker ps`{{execute}} se observa los contenedores en ejecución.
- - Para interactuar con el contenedor se ejecutaría docker exec -ti nombre del contenedor (instrucción). A modo de ejemplo, se podría observar el fichero index.html generado en el Dockerfile `docker exec apache_c1 cat /var/www/html/index.html`{{execute}}
+# Primeros pasos: levantamos un servidor web (NGINX)
+- Usaremos una imagen pública de NGINX basada en el SO Alpine.
+- Ejecutaremos `docker run --rm --name webserver -d -p 8080:80 nginx:alpine`{{execute}}
+- Abrimos una pestaña mostrando el puerto ``8080`` del ``HOST 1`` y vemos que efectivamente se ha lanzado el servidor y responde al puerto que hemos publicado.
+- Con el comando `docker ps`{{execute}} vemos los contenedores en ejecución.
+- Con `docker images`{{execute}} veremos las imágenes que hemos descargado.
+- Podemos ver los logs del servidor ejecutando `docker logs webserver`{{execute}}
+- Comprobaremos los procesos en marcha dentro del contenedor con la siguiente orden `docker top webserver`{{execute}}
+- También podemos disponer de información acerca del consumo de recursos con `docker stats webserver`{{execute}}
+- Incluso podemos meternos dentro del contenedor con un _bash_ haciendo `docker exec -it webserver bash`{{execute}}

@@ -1,9 +1,13 @@
-## Objetivo:
 
-**Crear redes, volúmenes y servicios para desplegar una aplicación de ejemplo "_cats vs dogs_".**
+**Objetivo: Crear redes, volúmenes y servicios para desplegar una aplicación de ejemplo "_cats vs dogs_".**
 
-Antes que nada vamos a inicializar el modo _Swarm_ de _Docker_, ejecutando ``docker swarm init``{{execute}}
-Esto nos dejará con un _cluster_ que solo dispone de un nodo, que hace de líder y de _manager_, algo que podemos ver con la siguiente orden en línea, ``docker node ls``{{execute}}.
+Antes que nada vamos a inicializar el modo _Swarm_ de _Docker_, ejecutando ``docker swarm init``{{execute HOST1}}
+
+Esto nos dejará con un _cluster_ que solo dispone de un nodo, que hace de líder y de _manager_, algo que podemos ver con la siguiente orden en línea, ``docker node ls``{{execute HOST1}}.
+
+Para añadir un nodo '_worker_' al _cluster_ copiaremos la instrucción que nos ha facilitado el _manager_ al iniciar el modo _Swarm_ en el ``HOST 1`` y la pegaremos en el terminal del ``HOST 2``.
+
+Ahora podemos ver cómo se ha modificado el estado de nuestro _cluster_, ejecutando de nuevo ``docker node ls``{{execute HOST1}}
 
 Nos situamos en el directorio del ejercicio ``cd /home/scrapbook/tutorial/training-setup/training-samples/6-swarm-sample && ll``{{execute}}
 
