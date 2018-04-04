@@ -1,27 +1,29 @@
 # Objetos de Docker
 
-**Contenedor**: 
-Instancia “ejecutable” de una imagen. Se puede crear, desplegar, parar, mover y eliminar usando la API de Docker
+**Imagen:** una colección ordenada de cambios en el sistema de ficheros y sus correspondientes parámetros de ejecución. Se construye a base capas que se especifican en un _script_ o _Dockerfile_. Una imagen no tiene estado y nunca cambia.
 
-![Ciclo de vida de un contenedor](https://cdn-images-1.medium.com/max/1129/1*vca4e-SjpzSL5H401p4LCg.png)
+![Flujo y relaciones de los objetos en Docker](https://docs.docker.com/engine/images/engine-components-flow.png)
 
-Órdenes en línea para gestionar el ciclo de vida de un contenedor _docker_:
-- **build** ( Construir)
-- **run**  (Desplegar)
-- **ps**  (Listar  Contenedores)
-- **images** (Listar Imágenes )
-- **pull** (Descargar imagen )
-- **push** (Subir imagen)
-- **exec** (Interactuar con el contenedor)
-- **rmi** (Borrar Imagen)
-- **kill** (Matar contenedor)
+**Dockerfile Referencias de Commandos**: 
+- **FROM**: Indica de que imagen base con la que se contruye la imagen
+- **MAINTAINER**: Autor
+- **LABEL**: Añade metadatos a la imagen
+- **ADD, COPY**: Copia de ficheros y directorios a la imagen
+- **ENV**: Define variables de entorno de la imagen
+- **RUN**: Ejecución de comandos
+- **EXPOSE**: Informa que puertos escuchan pero no los pone accesibles desde  nuestro host. Para que los puertos sean accesibles hay que indicarlo en docker run cuando se despliegue con –p $PUERTOHOST:$PUERTODOCKER
+- **USER**: Indica que usuario se utiliza para desplegar el contenedor.
+- **WORKDIR**:  Cambia de directorio de trabajo
+- **VOLUME**:  Indica el punto de montaje  Persistencia
+- **ENTRYPOINT**: Permite configurar el contenedor en el despliegue.
+- **CMD**: Ejecutable, típicamente el arranque del servicio del propósito del contenedor.
 
 # Primeros pasos: construimos una imagen con nuestro propio Dockerfile y levantamos un contenedor
 - Se ha cargado un _Dockerfile_ de ejemplo para la creación de un contenedor _Apache_.
-- Para visualizar este archivo ejecutamos `cd /home/scrapbook/tutorial/ && cat ./apache/Dockerfile`{{execute}}
+- Para visualizar este archivo ejecutamos `cd /home/scrapbook/tutorial/apache && cat Dockerfile`{{execute}}
 - Para generar la imagen de este contenededor se debe ejectutar el comando _build_.
 - Para dar un nombre a la imagen que se genera tras la construcción se utiliza la opción ``-t (--tag)`` (nommbre:version).
-- Construimos ejecutando `docker build -t apache:dev-01 ./apache`{{execute}}
+- Construimos ejecutando `docker build -t apache:dev-01 .`{{execute}}
 - Al final, se puede observar que la imagen se encuentra registrada en nuestro repositorio interno de docker. `docker images`{{execute}}
 - Para desplegar el contenedor se debe ejecutar el comando ``docker run`` y posteriormente hacer corresponder el puerto entre el _host_ y el servicio dentro del contenedor `docker run -d -p 80:80 --rm --name webserver apache:v1`{{execute}}. La opción ``-d (--detach)`` indica que se ejecute en background; y con ``--rm`` indicamos que se elimine el contenedro cuando se pare.
 - Con el comando `docker ps`{{execute}} vemos los contenedores en ejecución.

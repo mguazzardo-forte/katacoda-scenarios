@@ -1,21 +1,20 @@
 
 # Objetos de Docker
 
-![Flujo y relaciones de los objetos en Docker](https://docs.docker.com/engine/images/engine-components-flow.png)
+**Contenedor**: es una instancia “ejecutable” de una imagen. Se puede crear, desplegar, parar, mover y eliminar usando la API de _Docker_. Básicamente, un contenedor se compone de una imagen _Docker_, un entorno de ejecución y un conjunto estándar de instrucciones. De la misma manera que los contenedores de logística definen un estándar para mover mercancía, los contenedores _Docker_ definen un estándar para transportar o mover aplicaciones software y microservicios.
 
-**Dockerfile Referencias de Commandos**: 
-- **FROM**: Indica de que imagen base con la que se contruye la imagen
-- **MAINTAINER**: Autor
-- **LABEL**: Añade metadatos a la imagen
-- **ADD, COPY**: Copia de ficheros y directorios a la imagen
-- **ENV**: Define variables de entorno de la imagen
-- **RUN**: Ejecución de comandos
-- **EXPOSE**: Informa que puertos escuchan pero no los pone accesibles desde  nuestro host. Para que los puertos sean accesibles hay que indicarlo en docker run cuando se despliegue con –p $PUERTOHOST:$PUERTODOCKER
-- **USER**: Indica que usuario se utiliza para desplegar el contenedor.
-- **WORKDIR**:  Cambia de directorio de trabajo
-- **VOLUME**:  Indica el punto de montaje  Persistencia
-- **ENTRYPOINT**: Permite configurar el contenedor en el despliegue.
-- **CMD**: Ejecutable, típicamente el arranque del servicio del propósito del contenedor.
+![Ciclo de vida de un contenedor](https://cdn-images-1.medium.com/max/1129/1*vca4e-SjpzSL5H401p4LCg.png)
+
+Órdenes en línea para gestionar el ciclo de vida de un contenedor _docker_:
+- **build** ( Construir)
+- **run**  (Desplegar)
+- **ps**  (Listar  Contenedores)
+- **images** (Listar Imágenes )
+- **pull** (Descargar imagen )
+- **push** (Subir imagen)
+- **exec** (Interactuar con el contenedor)
+- **rmi** (Borrar Imagen)
+- **kill** (Matar contenedor)
 
 # Primeros pasos: levantamos un servidor web (NGINX)
 - Usaremos una imagen pública de NGINX basada en el SO Alpine.
