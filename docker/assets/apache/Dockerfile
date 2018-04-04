@@ -7,7 +7,7 @@ RUN yum -y update && \
     yum install -y httpd &&\
     yum clean all
 
-COPY index.html /var/www/html/index.html
+VOLUME /var/www/html
 
 EXPOSE 80
 
