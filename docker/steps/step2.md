@@ -26,4 +26,4 @@
 - Podemos ver los logs del servidor ejecutando `docker logs webserver`{{execute}}
 - Comprobaremos los procesos en marcha dentro del contenedor con la siguiente orden `docker top webserver`{{execute}}
 - También podemos disponer de información acerca del consumo de recursos con `docker stats webserver`{{execute}}
-- Incluso podemos meternos dentro del contenedor con un _bash_ haciendo `docker exec -it webserver bash`{{execute}}
+- Incluso podemos meternos dentro del contenedor con un _bash_ (en este caso usamos ``ash, apline bash``) haciendo `docker exec -it webserver ash`{{execute}}

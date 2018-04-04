@@ -17,8 +17,12 @@ Instancia “ejecutable” de una imagen. Se puede crear, desplegar, parar, move
 - **kill** (Matar contenedor)
 
 # Primeros pasos: construimos una imagen con nuestro propio Dockerfile y levantamos un contenedor
- - Se ha generado un Dockerfile para la creación de un contenedor apache en la ruta ./apache/Dockerfile. Para visualizar este archivo `cat ./apache/Dockerfile`{{execute}} Para generar la imagen de este contenededor se debe ejectutar el comando build. Para dar un nombre a la imagen a generar se  introduce la opción ``-t (--tag)`` (nommbre:version) `docker build -t apache:dev-01 ./apache`{{execute}}
- - Al final la generación de la imagen, se puede observar que se encuentra registrada en nuestro repositorio interno de docker. `docker images `{{execute}}
- - Para desplegar el contenedor se debe ejecutar el comando docker run y posteriormente mapear el puerto entre el host y el servicio dentro del contenedor `docker run -d -p 80:80 --rm --name webserver apache:v1`{{execute}}. La opción ``-d (--detach)`` indica que se ejecute en background; y con ``--rm`` indicamos que se elimine el contenedro cuando se pare.
- - Con el comando `docker ps`{{execute}} vemos los contenedores en ejecución.
- - Para interactuar con el contenedor se ejecutaría docker exec -ti nombre del contenedor (instrucción). A modo de ejemplo, se podría observar el fichero index.html generado en el Dockerfile `docker exec webserver cat /var/www/html/index.html`{{execute}}
+- Se ha cargado un _Dockerfile_ de ejemplo para la creación de un contenedor _Apache_.
+- Para visualizar este archivo ejecutamos `cd /home/scrapbook/tutorial/ && cat ./apache/Dockerfile`{{execute}}
+- Para generar la imagen de este contenededor se debe ejectutar el comando _build_.
+- Para dar un nombre a la imagen que se genera tras la construcción se utiliza la opción ``-t (--tag)`` (nommbre:version).
+- Construimos ejecutando `docker build -t apache:dev-01 ./apache`{{execute}}
+- Al final, se puede observar que la imagen se encuentra registrada en nuestro repositorio interno de docker. `docker images`{{execute}}
+- Para desplegar el contenedor se debe ejecutar el comando ``docker run`` y posteriormente hacer corresponder el puerto entre el _host_ y el servicio dentro del contenedor `docker run -d -p 80:80 --rm --name webserver apache:v1`{{execute}}. La opción ``-d (--detach)`` indica que se ejecute en background; y con ``--rm`` indicamos que se elimine el contenedro cuando se pare.
+- Con el comando `docker ps`{{execute}} vemos los contenedores en ejecución.
+- Para interactuar con el contenedor se ejecutaría docker exec -ti nombre del contenedor (instrucción). A modo de ejemplo, se podría observar el fichero index.html generado en el Dockerfile `docker exec webserver cat /var/www/html/index.html`{{execute}}
