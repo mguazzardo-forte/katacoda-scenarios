@@ -2,8 +2,7 @@ FROM centos:centos7
 
 MAINTAINER devopstenerife@gmail.com
 
-RUN yum -y update && \
-    yum clean all && \
+RUN yum install -y epel-release && \
     yum install -y nginx &&\
     yum clean all
 
