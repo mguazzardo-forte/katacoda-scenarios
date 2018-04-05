@@ -23,7 +23,9 @@ RUN yum install -y epel-release && \
     -keyout /etc/pki/nginx/private/server.key  -out /etc/pki/nginx/server.crt && \
     yum clean all
 
-VOLUME /usr/share/nginx/html /etc/nginx/conf.d
+RUN sed "5s/nginx/root/" /etc/nginx/nginx.conf
+
+VOLUME /usr/share/nginx/html /etc/nginx
 
 EXPOSE 80 443
 
