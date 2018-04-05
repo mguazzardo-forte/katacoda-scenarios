@@ -2,7 +2,7 @@ FROM centos:centos7
 
 MAINTAINER devopstenerife@gmail.com
 
-ENV NGINX_VERSION 1.10.2
+ENV NGINX_VERSION 1.12.2
 
 RUN yum install -y epel-release && \
     yum install -y nginx-${NGINX_VERSION} &&\
