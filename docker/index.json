@@ -3,7 +3,7 @@
   "title": "Docker - Intro",
   "description": "Tus primeros pasos para meterlo todo en contenedores sin ser estibador/a ;)",
   "difficulty": "Principiante",
-  "time": "10 minutes",
+  "time": "60 minutes",
   "details": {
      "steps": [
       {
