@@ -1,6 +1,6 @@
 Para este curso vamos a utilizar una máquina **Ubuntu**, distribución que suele utilizarse para crear entornos de producción y que cuenta con mucha documentación sobre cómo solucionar todo tipo de problemas.
 
-Instalamos Git para empezar a jugar, ejecutando ``apt install -y git``{{execute HOST1}} (esto puede tardar un poco)
+Instalamos Git para empezar a jugar, ejecutando ``apt update && apt install -y git``{{execute HOST1}} (esto puede tardar un poco)
 
 Lo primero que haremos es clonar los ficheros de los ejemplos que iremos recorriendo en este escenario: lo haremos ejecutanto ``git clone https://github.com/devopstf/training-setup.git``{{execute HOST1}}
 
