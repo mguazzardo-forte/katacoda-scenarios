@@ -27,4 +27,4 @@
 - También podemos disponer de información acerca del consumo de recursos con `docker stats webserver`{{execute}}
 - Incluso podemos meternos dentro del contenedor con un _bash_ (en este caso usamos ``ash, apline bash``) haciendo `docker exec -it webserver ash`{{execute}}
 - Lo paramos `docker stop webserver`{{execute}}
-- [ ] Comprobamos que el _flag_ ``--rm`` lo ha borrado `docker ps -a`{{execute}}
+- Comprobamos que el _flag_ ``--rm`` lo ha borrado `docker ps -a`{{execute}}
