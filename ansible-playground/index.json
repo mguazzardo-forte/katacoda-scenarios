@@ -5,7 +5,7 @@
   "difficulty": "Playground",
   "time": "Undefined",
   "backend": {
-    "imageid": "centos"
+    "imageid": "ansible"
   },
   "environment": {
     "uilayout": "editor-terminal",
