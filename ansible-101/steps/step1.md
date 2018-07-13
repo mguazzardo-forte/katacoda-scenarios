@@ -2,11 +2,11 @@ Para este curso vamos a utilizar una máquina **CentOS 7**, distribución que su
 
 Como tenemos una **máquina limpia**, sin mucho más que lo estrictamente necesario para funcionar, **vamos a tener que instalarnos nosotros mismos Ansible**. El objetivo de hacerlo en esta etapa es darnos cuenta de que Ansible no es única y exclusivamente eso, sino que se sirve de una serie de dependencias que veremos a continuación.
 
-Para **instalar Ansible**, vamos a utilizar el siguiente comando ``yum install ansible``{{execute}}
+Para **instalar Ansible**, tendríamos que utilizar nuestro gestor de paquetes con el siguiente comando ``apt install ansible``. en este caso, ya está incluido en el entorno.
 
 # ¿Qué instalamos junto con Ansible?
 
-Una vez ejecutemos el comando, veremos cómo resuelve toda la serie de dependencias del paquete, y antes de que escribamos "y" y pulsemos Enter para instalarlo, podremos fijarnos en que **Ansible no viene solo**.
+Si ejecutemos el comando, veremos cómo resuelve toda la serie de dependencias del paquete, y antes de que escribamos "y" y pulsemos Enter para instalarlo, podremos fijarnos en que **Ansible no viene solo**.
 
 En efecto, **Ansible se sirve de Python para funcionar**. Junto a ello necesitará, además, ser capaz de establecer conexiones SSH. Además de la estructura de ficheros, escritos en YAML, Ansible se sirve de Python para crear sus distintos módulos de automatización. 
 
