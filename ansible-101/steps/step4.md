@@ -47,7 +47,7 @@ Para crearlo en el punto exacto, podemos servirnos de este comando: `touch tasks
 Una vez hecho esto, comenzaremos con la tarea que instala el editor '**nano**': 
 ```yaml 
 - name: Install nano editor 
-    yum:  
+    apt:  
       name: nano
       state: latest 
 ``` 
