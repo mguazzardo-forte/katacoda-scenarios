@@ -8,7 +8,7 @@ Nos situamos en el directorio del ejercicio ``cd /home/scrapbook/tutorial/traini
 - Usaremos la versión `2`de la sintaxis de YAML.
 - Drupal escuchará en el puerto 8080.
 - Debemos asegurarnos de que asignamos una contraseña para acceder a la BB.DD., usando la variable de entorno `POSTGRES_PASSWORD` en la imagen de `postgres`.
-- Realizaremos la configuración del Drupal utilizando el _Wizard_ vía navegador, en la dirección http://localhost:8080
+- Realizaremos la configuración del Drupal utilizando el _Wizard_ vía navegador, en el puerto 8080 (Pestaña _Web Preview_ (+) al lado de _Terminal Host 1_)
 - Drupal considera que la BB.DD. está en local, i.e. `localhost`, pero en vuestro caso su nombre será el del servicio que pongáis en el _script_.
 - Leer y escribir son habilidades muy poco valoradas: repasad la documentación de la imagen oficial de Drupal en _Docker Hub_ para ver qué volúmenes necesitan persistencia y qué variables de entorno necesitamos.
 
