@@ -1,6 +1,6 @@
 {
-  "title": "Jugando con docker",
-  "description": "Prueba de dockers",
+  "title": "Jugando con docker y MySQL",
+  "description": "Prueba de dockers y MySQL",
   "difficulty": "Beginner",
   "time": "4 hours",
   "details": {
