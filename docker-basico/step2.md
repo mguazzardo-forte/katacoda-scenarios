@@ -38,7 +38,13 @@ una vez que estamos dentro, hacemos
 
 `echo "hola mundo" > /var/www/html/hola.html`{{EXECUTE}}
 
-con exit salimos del contenedor, y vemos que todo este corriendo como corresponde. para esto hacemos.
+con exit salimos del contenedor, 
+
+`exit`{{EXECUTE}} 
+
+**es necesario salir del contenedor**
+
+y vemos que todo este corriendo como corresponde. para esto hacemos.
 
 `curl 172.18.0.2/hola.html`{{EXECUTE}}
 
