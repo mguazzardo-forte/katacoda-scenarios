@@ -12,4 +12,4 @@ Una vez que tenemos esto, nos conectamos finalmente a la base de datos
 
 `mysql -u root -pmaster -h 172.18.0.2`{{EXECUTE}}
 
-[[File:db.PNG]]
+y con esto terminamos el ejercicio
