@@ -8,4 +8,4 @@ lo primero que vamos a hacer, vamos a ejecutar, el siguiente comando
 
 Con lo cual, se me genera una salida de los nodos como están corriendo. **Pero queremos mas info**
 
-[Salida kubectl](./kubectl.PNG)
+[Salida kubectl](https://github.com/mguazzardo/katacoda-scenarios/blob/master/kubernetes-basico/kubectl.PNG)
