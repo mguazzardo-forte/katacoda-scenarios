@@ -1,0 +1,1 @@
+[ $(oc project -q) == "myproject" ] && echo "done"

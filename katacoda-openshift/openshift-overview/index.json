@@ -1,0 +1,45 @@
+{
+  "title": "OpenShift overview",
+  "description": "",
+  "time": "60 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Logging to cluster",
+        "text": "step1.md"
+      },
+      {
+        "title": "Build",
+        "text": "step2.md"
+      },
+      {
+        "title": "Deploy",
+        "text": "step3.md"
+      },
+      {
+        "title": "Labels",
+        "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "code": "set-env.sh",
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "icon": "fa-openshift",
+    "showdashboard": true,
+    "dashboards": [   {
+      "name": "OpenShift Console",
+      "port": 8443
+    }],
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "openshift",
+    "port": 8443
+  }
+}

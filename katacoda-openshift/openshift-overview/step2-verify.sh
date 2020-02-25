@@ -1,0 +1,1 @@
+[ $(oc get istag hello:latest --template='{{.metadata.name}}') == "hello:latest" ] && echo "done"
