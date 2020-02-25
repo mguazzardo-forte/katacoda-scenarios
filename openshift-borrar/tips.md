@@ -21,9 +21,10 @@ Para crear un projecto llamado  ``myproject`` corremos lo siguiente:
 
 ``oc new-project myproject``{{execute}}
 
-Una vez ingresado alli, lo que haaremos es crear un despliegue  que corra httpd
+Una vez ingresado alli, lo que haaremos es crear un despliegue  que corra httpd, y para eso, utilizaremos la imagen
+de httpd de centos, que nos corre el httpd en el port 8080
 
-``oc new-app httpd``{{execute}}
+``oc new-app docker.io/centos/httpd-24-centos7``{{execute}}
 
 Queremos ver que el deploy este corriendo.
 
