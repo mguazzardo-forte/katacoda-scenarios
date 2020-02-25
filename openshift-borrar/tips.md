@@ -30,7 +30,8 @@ Queremos ver que el deploy este corriendo.
 
 ``oc get all``{{execute}}
 
-y alli vemos, los pods, los services, los dc, etc
+y alli vemos, los pods, los services, los dc, etc. Esto lo podemos repetir varias veces, hasta que el pod del httpd quede en estado
+``Running``
 
 Si queremos borrar absolutamente todos los elementos que tenemos corriendo dentro de nuestro projecto
 
@@ -40,7 +41,7 @@ Luego vemos si se ejecuto como lo deseamos
 
 ``oc get all``{{execute}}
 
-y finalmente, si queremos borrar el projecto
+Con esto, damos por finalizado este tutorial.
 
-``oc delete project my-project``{{execute}}
+Muchas gracias!
 
