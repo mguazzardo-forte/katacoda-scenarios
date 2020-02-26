@@ -21,15 +21,17 @@ Para crear un projecto llamado  ``myproject`` corremos lo siguiente:
 
 ``oc new-project myproject``{{execute}}
 
-Una vez ingresado alli, lo que haaremos es crear un despliegue  que corra httpd
+Una vez ingresado alli, lo que haaremos es crear un despliegue  que corra httpd, y para eso, utilizaremos la imagen
+de httpd de centos, que nos corre el httpd en el port 8080
 
-``oc new-app httpd``{{execute}}
+``oc new-app docker.io/centos/httpd-24-centos7``{{execute}}
 
 Queremos ver que el deploy este corriendo.
 
 ``oc get all``{{execute}}
 
-y alli vemos, los pods, los services, los dc, etc
+y alli vemos, los pods, los services, los dc, etc. Esto lo podemos repetir varias veces, hasta que el pod del httpd quede en estado
+``Running``
 
 Si queremos borrar absolutamente todos los elementos que tenemos corriendo dentro de nuestro projecto
 
@@ -39,7 +41,7 @@ Luego vemos si se ejecuto como lo deseamos
 
 ``oc get all``{{execute}}
 
-y finalmente, si queremos borrar el projecto
+Con esto, damos por finalizado este tutorial.
 
-``oc delete project my-project``{{execute}}
+Muchas gracias!
 
