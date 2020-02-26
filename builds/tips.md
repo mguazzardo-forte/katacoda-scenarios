@@ -33,7 +33,7 @@ Una vez alli, lanzamos la app
 
 Para ver el progreso del build, hacemos lo siguiente
 
-``oc logs -f bc/django-ex``{{execute}}
+``oc logs bc/django-ex``{{execute}}
 
 Una vez que el build haya terminado, vemos todos los elementos de la app
 
