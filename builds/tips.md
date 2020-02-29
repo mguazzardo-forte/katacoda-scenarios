@@ -41,7 +41,7 @@ Una vez que el build haya terminado, vemos todos los elementos de la app
 
 Donde podremos ver una salida como la siguiente
 
-`` 
+... 
 NAME                          REVISION   DESIRED   CURRENT   TRIGGERED BY
 deploymentconfigs/django-ex   1          1         1         config,image(django-ex:latest)
 
@@ -63,7 +63,7 @@ rc/django-ex-1   1         1         1         5m
 
 NAME            TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
 svc/django-ex   ClusterIP   172.30.54.171   <none>        8080/TCP   7m
-``
+...
 
 Con lo cual vemos que esta todo corriendo. si queremos borrar todo, hacemos 
 
