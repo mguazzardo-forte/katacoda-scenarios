@@ -1,1 +1,1 @@
-echo  "hola mundo"
+echo  "hola mundo" && mkdir prueba
