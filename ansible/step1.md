@@ -17,7 +17,7 @@ y luego vemos que este corriendo
 
 `docker ps`{{execute}}
 
-Luego, generamos dos containers mas, con el password siempre de ``Ultimat3.2020`` 
+Luego, generamos dos containers mas, con el password siempre de ``master`` 
 
 `docker run -itd --privileged --name=serverb centos7ssh`{{execute}}
 
