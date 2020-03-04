@@ -20,4 +20,6 @@ y con esto vemos que ya se genero el cruce de llaves ssh.
 
 vamos a ver el ejemplo que ya tenemos cargado....
 
+`ansible-playbook -C playbook.yml -i inventory`{{execute}}
+
 
