@@ -17,7 +17,7 @@ y luego vemos que este corriendo
 
 `docker ps`{{execute}}
 
-Luego, generamos dos containers mas, con el password siempre de ``Ultimat3.2020`` 
+Luego, generamos dos containers mas, con el password siempre de ``master`` 
 
 `docker run -itd --privileged --name=serverb centos7ssh`{{execute}}
 
@@ -27,3 +27,34 @@ y luego vemos que este corriendo
 
 `docker ps`{{execute}}
 
+agregamos hosts al /etc/hosts
+
+`echo "172.18.0.2 servera" >> /etc/hosts`{{execute}}
+
+`echo "172.18.0.3 serverb" >> /etc/hosts`{{execute}}
+
+`echo "172.18.0.4 serverc" >> /etc/hosts`{{execute}}
+
+Luego, tratamos de ingresar a los hosts, para ver si estan corriendo bien.
+
+`ssh servera`{{execute}}
+
+Le damos al yes, por el fingerprinting para darle ok, y vemos que entramos. asi lo hacemos con cada uno de ellos, y vemos que esta ok
+
+Salimos
+
+`exit`{{execute}}
+
+`ssh serverb`{{execute}}
+
+Salimos
+
+`exit`{{execute}}
+
+`ssh serverc`{{execute}}
+
+Salimos
+
+`exit`{{execute}}
+
+Veamos eso

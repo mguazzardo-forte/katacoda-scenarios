@@ -1,4 +1,26 @@
 mkdir /root/DockerSSH
+
+cat << EOF > /root/DockerSSH/playbook.yml
+
+---
+ - hosts: servers
+   tasks:
+    - name: "instalar apache"
+      yum:
+        name: httpd
+        state: latest
+    - name: "Levantar apache"
+      service:
+        name: httpd
+        state: started
+EOF
+
+cat << EOF > /root/DockerSSH/inventory
+[servers]
+servera
+serverb
+EOF
+
 cat << EOF >/root/DockerSSH/start.sh
 #!/bin/bash
 
