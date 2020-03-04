@@ -1,15 +1,23 @@
-ahora bien, sabemos la ip, que en este caso es **172.18.0.2** y sabemos la clave de root que es master.
+ahora bien, sabemos la ip, del servera es  **172.18.0.2** y sabemos la clave de root que es master.
 
-Nos falta instalar el cliente mysql. para eso hacemos lo siguiente
+Nos falta crear el keygen de nuestro server hosts.
 
-`apt update`{{EXECUTE}}
+`ssh-keygen -t rsa`{{EXECUTE}}
 
-y luego 
+y luego  todas las veces que nos pida enter
 
-`apt install -y mysql-client-core-5.7`{{EXECUTE}}
+Luego, copiar esta llave al servera
 
-Una vez que tenemos esto, nos conectamos finalmente a la base de datos
+`ssh-copy-id servera`{{EXECUTE}}
 
-`mysql -u root -pmaster -h 172.18.0.2`{{EXECUTE}}
+Y nos va a pedir , por única vez la clave de root, que es master, y luego probamos nuevamente
 
-y con esto terminamos el ejercicio
+`ssh servera`{{EXECUTE}}
+
+y con esto vemos que ya se genero el cruce de llaves ssh. 
+
+**Viendo un ejemplo sencillo**
+
+vamos a ver el ejemplo que ya tenemos cargado....
+
+
