@@ -17,6 +17,14 @@
       "text": "finish.md"
     }
   },
+ "details": {
+    "assets": {
+        "host01": [
+            {"file": "Dockerfile", "target": "/tmp", "chmod": "+x"},
+        ]
+    }
+},
+
   "environment": {
     "uilayout": "terminal"
   },
