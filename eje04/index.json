@@ -19,7 +19,7 @@
 
     "assets": {
         "client": [
-            {"file": "Dockerfile", "target": "/root"}
+            {"file": "Dockerfile", "target": "/root"},
             {"file": "hola.html", "target": "/root"}
         ]
     }
