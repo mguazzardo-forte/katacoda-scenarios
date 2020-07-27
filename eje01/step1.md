@@ -25,7 +25,7 @@ Vamos a actualizar los paquetes de ubuntu
 
 Vamos a instalar apache y unos módulos adicionales que vamos a usar despues
 
-`apt-get install apache2 net-tools curl telnet nano`{{EXECUTE}}
+`apt-get -y install apache2 net-tools curl telnet nano`{{EXECUTE}}
 
 Vamos activar apache y ver si funciona
 
