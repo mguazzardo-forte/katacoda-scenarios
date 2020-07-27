@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 # Install apache, PHP, and supplimentary programs. openssh-server, curl, and lynx-cur are for debugging the container.
-RUN apt-get update && apt-get -y install apache2 software-properties-common
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install apache2 software-properties-common
 RUN add-apt-repository ppa:ondrej/php
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install php5.6 net-tools nano
 
