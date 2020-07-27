@@ -17,14 +17,6 @@
       "text": "finish.md"
     }
   },
-    "assets": {
-      "client": [
-        {
-          "file": "Dockerfile",
-          "target": "/tmp"
-        }
-      ]
-  },
 
   "environment": {
     "uilayout": "terminal"
