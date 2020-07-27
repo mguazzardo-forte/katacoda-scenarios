@@ -1,8 +1,8 @@
 {
-  "title": "Cuarto ejercicio de docker",
-  "description": "Mostrando Dockerfiles",
+  "title": "Linux Playground",
+  "description": "Jugando con Linux",
   "difficulty": "Beginner",
-  "time": "4 hours",
+  "time": "60 minutes",
   "details": {
     "steps": [
       {
@@ -15,14 +15,8 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-
-    "assets": {
-        "client": [
-            {"file": "Dockerfile", "target": "/tmp", "chmod": "+x"}
-        ]
     }
-},
+  },
   "environment": {
     "uilayout": "terminal"
   },
@@ -30,3 +24,5 @@
     "imageid": "ubuntu"
   }
 }
+~
+
