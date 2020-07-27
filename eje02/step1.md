@@ -5,11 +5,11 @@ En primer momento, vamos a ver que este corriendo el docker engine.
 
 Vamos a buscar la imagen de mariadb
 
-`docker search mariadb | less`{{EXECUTE}}
+`docker search mariadb`{{EXECUTE}}
 
 Vamos a descargar y correr el contenedor de mariadb, y seteamos la clave de root
 
-`docker run -d --name mariadb -e 'MYSQL_ROOT_PASSWORD=master' mariadb``{{EXECUTE}}
+`docker run -d --name mariadb -e 'MYSQL_ROOT_PASSWORD=master' mariadb`{{EXECUTE}}
 
 Vemos que este corriendo el contenedor de mariadb
 
