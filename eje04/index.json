@@ -1,0 +1,34 @@
+{
+  "title": "Cuarto ejercicio de docker",
+  "description": "Mostrando Dockerfiles",
+  "difficulty": "Beginner",
+  "time": "4 hours",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+ "details": {
+    "assets": {
+        "host01": [
+            {"file": "Dockerfile", "target": "/tmp", "chmod": "+x"},
+        ]
+    }
+},
+
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
