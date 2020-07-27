@@ -7,12 +7,55 @@ Ahora vamos a bajar la imagen de ubuntu 18.04 lts
 
 `docker pull ubuntu:18.04`{{EXECUTE}}
 
-Ahora lo que vamos a ver que imágenes tenemos en el caché local
+Vamos a crear nuestro primer Container
 
-`docker images`{{EXECUTE}}
+`docker run -dit --name ubuntu ubuntu:18.04`{{EXECUTE}}
 
-Lo que vamos a hacer ahora, es ver la versión de docker que está corriendo
+Vamos a ver  nuestro primer container corriendo
 
-`docker -v`{{EXECUTE}}
+`docker ps`{{EXECUTE}}
 
-En el próximo paso, veremos como correr un docker de apache
+Vamos a ingresar a nuestro primer container y ejecutar unos comandos
+
+`docker exec -it ubuntu bash`{{EXECUTE}}
+
+Vamos a actualizar los paquetes de ubuntu
+
+`apt-get update`{{EXECUTE}}
+
+Vamos a instalar apache y unos módulos adicionales que vamos a usar despues
+
+`apt-get install apache2 net-tools curl telnet nano`{{EXECUTE}}
+
+Vamos activar apache y ver si funciona
+
+`service apache2 start`{{EXECUTE}}
+
+Vamos a agregar una pagina hola.html
+
+`echo "hola mundo" > /var/www/html/hola.html`{{EXECUTE}}
+
+con exit salimos del contenedor,
+
+`exit`{{EXECUTE}}
+
+**es necesario salir del contenedor**
+
+y vemos que todo este corriendo como corresponde. para esto hacemos.
+
+`curl 172.18.0.2/hola.html`{{EXECUTE}}
+
+y con esto vemos que se ejecutó correctamente el contenedor!!!
+
+Muchas gracias!
+
+
+
+
+
+
+
+
+
+
+
