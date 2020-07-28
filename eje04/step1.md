@@ -17,11 +17,15 @@ Vamos a correr el container
 
 Vamos a ver la IP que tiene asignada el container (De paso scripteamos un poco)
 
-`docker inspect apache | grep IPAddress | tail -1 | awk -F: '{print $2}' | awk -F\" '{print $2}'`{{EXECUTE}}
+`IP=$(docker inspect apache | grep IPAddress | tail -1 | awk -F: '{print $2}' | awk -F\" '{print $2});;echo $IP`{{EXECUTE}}
 
 ahora vamos a instalar un navegador
 
 `apt -y install lynx`{{EXECUTE}} 
+
+Por ultimo, hacemos la prueba final
+
+`lynx $IP/hola.html`{{EXECUTE}}
 
 
 Muchas gracias!
