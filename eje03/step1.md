@@ -40,6 +40,10 @@ Vamos a salir del contenedor
 
 `exit`{{EXECUTE}}
 
+Vamos a ver el nuevo volumen creado, y su contenido en el sistema host
+
+`ls /var/lib/docker/volumes/ubuntu/_data/`{{EXECUTE}}
+
 Vamos a crear un nuevo contenedor montando el mismo volumen
 
 `docker run -dit --name ubuntu02 -v ubuntu:/datos ubuntu:latest`{{EXECUTE}}
