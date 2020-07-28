@@ -1,0 +1,33 @@
+{
+  "title": "Tercer ejercicio de docker",
+  "description": "Mostrando volumenes",
+  "difficulty": "Beginner",
+  "time": "4 hours",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+
+    "assets": {
+        "client": [
+            {"file": "Dockerfile", "target": "/root"},
+            {"file": "hola.html", "target": "/root"}
+        ]
+    }
+},
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
