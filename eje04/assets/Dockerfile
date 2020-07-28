@@ -15,6 +15,8 @@ ENV APACHE_PID_FILE /var/run/apache2.pid
 # Expose apache.
 EXPOSE 80 443
 
+ADD hola.html /var/www/html
+
 RUN a2ensite 000-default.conf
 
 # By default start up apache in the foreground, override with /bin/bash for interative.
