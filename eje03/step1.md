@@ -5,15 +5,15 @@ En primer momento, vamos a ver que este corriendo el docker engine.
 
 Ahora vamos a listar los volumenes existentes
 
-`docker volumes ls`{{EXECUTE}}
+`docker volume ls`{{EXECUTE}}
 
 Vamos a crear un volumen llamado ubuntu
 
-`docker create volume ubuntu`{{EXECUTE}}
+`docker volume create ubuntu`{{EXECUTE}}
 
 Vamos a volver a listar los volumenes
 
-`docker volumes ls`{{EXECUTE}}
+`docker volume ls`{{EXECUTE}}
 
 Vamos a correr el contenedor, con el nuevo volumen
 
