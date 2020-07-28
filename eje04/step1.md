@@ -17,7 +17,7 @@ Vamos a correr el container
 
 Vamos a ver la IP que tiene asignada el container (De paso scripteamos un poco)
 
-`IP=$(docker inspect apache | grep IPAddress | tail -1 | awk -F: '{print $2}' | awk -F\" '{print $2});;echo $IP`{{EXECUTE}}
+`IP=$(docker inspect apache | grep IPAddress | tail -1 | awk -F: '{print $2}' | awk -F\" '{print$2}') && echo $IP`{{EXECUTE}}
 
 ahora vamos a instalar un navegador
 
