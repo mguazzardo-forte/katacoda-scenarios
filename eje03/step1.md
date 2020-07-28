@@ -54,7 +54,9 @@ Vamos a listar la raiz, para ver si se creo la carpeta datos
 
 Podemos ver que tenemos los mismos archivos que teniamos en el volumen que habiamos usado en el primer contenedor
 
-Ahora vamos a borrar el primer contenedor
+Ahora vamos a borrar el primer contenedor, para eso antes que nada debemos salir del contenedor
+
+`exit`{{EXECUTE}}
 
 `docker rm -fv ubuntu01`{{EXECUTE}}
 
