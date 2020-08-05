@@ -27,7 +27,7 @@ Vemos todos los objetos de kubernetes que se me han generado
 
 Vemos ahora la imagen de docker corriendo en el node01
 
-`docker ps`{{EXECUTE HOST2}}
+`docker ps| grep apache`{{EXECUTE HOST2}}
 
 Ahora, lo que vamos a hacer, vamos a sacar el nombre del pod, y lo vamos a almacenar en una variable HTTP.
 
@@ -39,7 +39,7 @@ Vamos a averiguar la IP del pod, con el siguiente comando IP=$(kubectl describe 
 
 Ahora, vemos que hay en esa IP
 
-curl $IP
+`curl $IP`{{EXECUTE}}
 
 Finalmente entramos al pod, ejecutando kubectl exec --stdin --tty  $HTTP -- bash
 
