@@ -1,4 +1,4 @@
-#Kubernetes, la intro
+Kubernetes, la intro
 
 bueno, veremos en esta lección, una intro, muy básica de kubernetes, tenemos un cluster armado con un nodo y un master
 
