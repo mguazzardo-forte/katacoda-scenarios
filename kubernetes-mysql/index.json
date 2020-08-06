@@ -1,6 +1,6 @@
 {
-  "title": "demo de kubernetes",
-  "description": "POC de kubernetes",
+  "title": "Kubernetes y Mysql",
+  "description": "Prueba de concepto de kubernetes mysql y mariadb",
   "difficulty": "Intermediate",
   "time": "2 hours",
   "details": {
