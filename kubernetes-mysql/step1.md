@@ -57,7 +57,7 @@ Luego, lo que vamos a hacer, es tratar de conectarnos a la base de datos, con el
 
 Averiguo la IP del contenedor.
 
-`IP=$(kubectl describe po | grep -i ip)`{{EXECUTE}}
+`IP=$(kubectl describe po | grep -i ip | awk -F: '{print $2}')`{{EXECUTE}}
 
 Ahora lanzo el cliente mariadb
 
@@ -89,6 +89,8 @@ Tambien lo podemos ver con el siguiente comando, que nos dice en que nodo esta e
 
 Finalmente nos conectamos con el cliente mariadb-client
 
-`mysql -u root -pmaster -h 10.32.0.193`{{EXECUTE}}
+`IP=$(kubectl describe po | grep -i ip | awk -F: '{print $2}')`{{EXECUTE}}
+
+`mysql -u root -pmaster -h $IP`{{EXECUTE}}
 
 **Muchas gracias**
