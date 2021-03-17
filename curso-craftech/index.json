@@ -1,0 +1,29 @@
+  
+{
+  "title": "Clase uno del curso de craftech",
+  "description": "Mostrando Dockerfiles - APP de flask",
+  "difficulty": "Beginner",
+  "time": "1 hours",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "assets": {
+        "client": [
+            {"file": "Dockerfile", "target": "/root"}
+        ]
+    }
+},
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
