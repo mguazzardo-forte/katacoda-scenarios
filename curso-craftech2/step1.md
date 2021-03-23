@@ -4,7 +4,7 @@ En primer momento, vamos a ver que este corriendo el docker engine. `docker ps`{
 
 Nos vamos a clonar el repo del curso
 
-`git clone https://github.com/mguazzardo/curso-basico-devops-marzo-2021 -b curso2`{{EXECUTE}}
+`git clone https://github.com/craftech-academy/curso-basico-devops-marzo-2021 -b curso2`{{EXECUTE}}
 
 nos posicionamos en el directorio correcto
 
