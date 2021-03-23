@@ -10,21 +10,14 @@ nos posicionamos en el directorio correcto
 
 `cd curso-basico-devops-marzo-2021`{{EXECUTE}}
 
-Vamos a crear nuestro primer Container
+Vamos a ejecutar nuestro compose, recordemos que solo se van a generar las imagenes del directorio 
 
-`docker build -t appflask .`{{EXECUTE}}
+`docker-compose up`{{EXECUTE}}
 
-Vamos lanzar el contenedor 
-
-`docker run -d --name appcurso appflask`{{EXECUTE}}
 
 vamos a ver que este corriendo 
 
-`docker ps`{{EXECUTE}}
-
-Vamos a ver si está todo corriendo en orden, averiguamos la IP del contenedor.
-
-`IP=$(docker inspect appcurso | grep IPAddress | tail -1 | awk -F":" '{print $2}' | awk -F\" '{print $2}')`{{EXECUTE}}
+`docker-compose ps`{{EXECUTE}}
 
 y ahora, como dijo el zurdo, le hacemos un curl al port 5000, a los dos endpoints / y /other
 
