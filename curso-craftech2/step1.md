@@ -16,19 +16,7 @@ Vamos a ejecutar nuestro compose, recordemos que solo se van a generar las image
 
 
 vamos a ver que este corriendo 
-
-`docker-compose ps`{{EXECUTE}}
-
-y ahora, como dijo el zurdo, le hacemos un curl al port 5000, a los dos endpoints / y /other
-
-`curl $IP:5000/`{{EXECUTE}}
-
-y ahora al /other
-
-`curl $IP:5000/other`{{EXECUTE}}
-
-todo anduvo bien, nos vamos!
-
-Muchas gracias a la gente de craftech!
+y ahora viene toda la magia, de como mostrarlo con otras terminales, y como ver de pegarle a las distintos endpoints
+como pueden ser /windows /linux /mac u otro cualquiera, forzando un error.
 
 `exit`{{EXECUTE}}
