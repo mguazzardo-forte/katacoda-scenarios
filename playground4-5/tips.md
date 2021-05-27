@@ -94,3 +94,7 @@ user ID. This can be done by running the command:
 
 ``oc adm policy add-scc-to-user anyuid -z default -n myproject --as system:admin``{{execute}}
 
+La ruta
+
+`httpd-example-apache.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
+
