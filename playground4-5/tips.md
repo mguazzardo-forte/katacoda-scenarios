@@ -44,10 +44,15 @@ Con esto creamos el nuevo proyecto apache, y ahora, lo que falta es crear la app
 
 ``oc new-app httpd --name apache``{{execute}}
 
+
+
 Esperamos, y deberia crear un deploy en la siguiente ruta:
 
+Antes, debemos exponer el servicio
+
+``oc expose svc apache``{{execute}}
 
 La ruta
 
-http://`apache-apache.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
+http://apache-apache.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
