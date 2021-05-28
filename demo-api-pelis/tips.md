@@ -20,5 +20,5 @@ Antes, debemos exponer el servicio
 
 La ruta
 
-http://pelis-cheta-default.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
+http://pelis-cheta-pelis.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
