@@ -49,5 +49,5 @@ Esperamos, y deberia crear un deploy en la siguiente ruta:
 
 La ruta
 
-http:\\`apache-apache.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
+http://`apache-apache.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
 
