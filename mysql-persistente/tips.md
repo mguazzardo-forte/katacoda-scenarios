@@ -57,6 +57,15 @@ Con esto entramos a la consola de fedora core, le vamos a setear la variable PS1
 
 ``export PS1="CORE#"``{{execute}}
 
+En la vm de fedora core, podemos usar el comando sudo -i
+
+``sudo -i``{{execute}}
+
+y Luego, ya poder ver donde estan alojado los archivos de nuestro persistent volume
+
+``DIR=$(cat /tmp/pv.txt); cd /mnt/pv-data/$DIR``{{execute}}
+
+Con esto conseguimos nuestro objetivo.
 
 
 
