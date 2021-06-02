@@ -63,7 +63,7 @@ En la vm de fedora core, podemos usar el comando sudo -i
 
 y Luego, ya poder ver donde estan alojado los archivos de nuestro persistent volume
 
-``DIR=$(cat /tmp/pv.txt); cd /mnt/pv-data/$DIR``{{execute}}
+``DIR=$(cat /tmp/pv.txt); cd /mnt/pv-data/$DIR;ls``{{execute}}
 
 Con esto conseguimos nuestro objetivo.
 
