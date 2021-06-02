@@ -12,7 +12,9 @@ Con esto creamos el nuevo proyecto pelis, y ahora, lo que falta es crear la app.
 
 
 
-Esperamos, y deberia crear un deploy en la siguiente ruta:
+Esperamos,  deberia crear un deploy en la siguiente ruta, para eso utilizamos el comando rollout
+
+``oc rollout status dc/pelis-cheta``{{execute}}
 
 Antes, debemos exponer el servicio
 
