@@ -1,6 +1,6 @@
 {
     "icon": "fa-openshift",
-    "title": "Playground (OpenShift 4.4)",
+    "title": "Playground tkn",
     "description": "",
     "pathwayTitle": "OpenShift",
     "difficulty": "beginner",
@@ -15,7 +15,7 @@
     },
     "details": {
         "steps": [{
-            "title": "OpenShift Playground",
+            "title": "OpenShift Playground tkn",
             "text": "tips.md"
         }],
         "intro": {
