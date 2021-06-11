@@ -1,6 +1,6 @@
 {
     "icon": "fa-openshift",
-    "title": "Playground (OpenShift 4.4)",
+    "title": "Playground 4.4 dexa",
     "description": "",
     "pathwayTitle": "OpenShift",
     "difficulty": "beginner",
@@ -28,6 +28,7 @@
 	"assets": {
 	    "client": [
 		   {"file": "lanzar.sh", "target": "/root"}
-	             }
+		   ]
+	    }
     }
 }
