@@ -1,6 +1,6 @@
 {
-  "title": "Terraform для Kubernetes",
-  "description": "Мы экспериментируем с использованием Terraform для настройки ресурсов Kubernetes.",
+  "title": "Terraform y Kubernetes",
+  "description": "Probando terraform y kubernetes",
   "difficulty": "beginner",
   "time": "10 minutes",
   "details": {
@@ -16,18 +16,6 @@
       {
         "title": "Setup",
         "text": "setup.md"
-      },
-      {
-        "title": "Обновление нашей инфраструктуры",
-        "text": "update-infrastructure.md"
-      },
-      {
-        "title": "Creating linked resources",
-        "text": "create-linked-resources.md"
-      },
-      {
-        "title": "Terraform Modules for reuse",
-        "text": "modules.md"
       }
     ],
     "intro": {
@@ -45,7 +33,7 @@
     "uilayout": "editor-terminal",
     "dashboards": [ ],
     "uisettings": "yaml",
-    "uimessage1": "\u001b[36;1m training.\u001b[0m Обратите внимание, что установка командной строки Terraform может занять несколько минут."
+    "uimessage1": "Practicando kubernetes-terraform"
   },
   "backend": {
     "imageid": "kubernetes-cluster-running"
