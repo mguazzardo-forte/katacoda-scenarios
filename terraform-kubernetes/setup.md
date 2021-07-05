@@ -1,30 +1,35 @@
 
-# Конфигурирование проекта **Terraform**
+# vamos a ver un simple ejemplo de  **Terraform**
 
-Во-первых, давайте удостоверимся, что наша **Terraform command line** работает.
-
-Давайте быстро проверим версию CLI с помощью: 
+La idea es utilizar a terraform contra el proveedor de kubernetes.
+En este primer ejemplo, lo que realizaremos es sencillo, vamos a generar un
+nuevo namespace, llamado test.
+Para eso lo que vamos a generar es un plan y luego un apply de nuestro namespace.tf
+Lo primero que vamos a realizar, y dado a que esto puede tardar, es ver
+si carga terraform, en la primera ejecucion seguro que falla, pero esperamos
+y lo volvemos a correr.
+ 
 
 `terraform version`{{execute}}.
 
-## **Initialize**
+## **Initializando**
 
-Мы предоставили вам **scaffold** проекта **Terraform**, который на данный момент содержит только те бэкэнды, которые мы будем **utilize**.
+Como ya me genere un archivo en el directorio de terraform **Terraform**,  ejecutamos **utilize**.
 
 `cd terraform/terraform`{{execute}}
 
-## Давайте удостоверимся, что это работает
+## Veamos que namespaces tenemos corriendo
 
-По умолчанию поставщик **Kubernetes** для **Terraform** будет использовать наш текущий **Kubecontext**.
-
-Выполните следующую команду, чтобы получить список **namespaces** в кластере **Kubernetes**:
+Vamos a ver que namespaces tenemos corriendo. Para ello lo mas sencillo es
+ejecutar el comando que tenemos a continuacion.
+Para mas adelante veremos otros ejemplos.
 
 `kubectl get namespaces`{{execute}}
 
 
 Revisamos lo que tenemos guardado en nuestro archivo de namespaces.tf:
 
-`nano namespaces.tf`{{execute}}
+`cat namespaces.tf`{{execute}}
 
 <pre class="file" data-filename="namespaces.tf" data-target="replace">resource "kubernetes_namespace" "test" {
   metadata {
@@ -38,7 +43,8 @@ Luego, iniciamos el proyeecto, para que cargue los plugines para el provider de 
 
 `terraform init`{{execute}}
 
-Теперь давайте спланируем "plan" изменения. Когда мы запускаем эту команду, **Terraform** будет сравнивать наше желаемое состояние (то есть, что **wrong** в наших **.tf files**) с фактическим состоянием в нашей среде и сообщать нам, что ему нужно сделать, чтобы синхронизировать их.
+Esto nos inicializara el directorio donde esta cargado todo, y luego debemos
+correr un terraform plan
 
 `terraform plan `{{execute}}
 
@@ -48,7 +54,7 @@ Plan: 1 to add, 0 to change, 0 to destroy.
 
 Y como sabemos, luego de un apply , viene una ejecucion de un plan
 
-`terraform apply plan`{{execute}}
+`terraform apply`{{execute}}
 
 ```
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
