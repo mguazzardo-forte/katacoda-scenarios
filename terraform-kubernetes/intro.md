@@ -1,8 +1,8 @@
-Это Модуль 1 - **Terraform** для **Kubernetes**.
+ **Terraform** для **Kubernetes**.
 
-В этой лабораторной работе мы познакомим вас с основами **Terraform**, для Kubernetes.
+Veremos **Terraform**, Integrandolo con  Kubernetes.
 
-Для получения дополнительной информации см. [Terraform documentation][docs].
+Para alguna duda, por favor revisar . [Terraform documentation][docs].
 
 <!-- Links Referenced -->
 
