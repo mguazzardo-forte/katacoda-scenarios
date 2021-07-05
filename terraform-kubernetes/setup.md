@@ -66,10 +66,7 @@ use the `terraform show` command.
 
 State path: terraform.tfstate
 ```
-
-Поздравляем! Вы сделали первое изменение инфраструктуры с помощью **Terraform**. 
-
-Повторное выполнение команды:
+Veamos si se genero bien.
 
 `kubectl get namespaces`{{execute}} 
 
@@ -77,4 +74,3 @@ PD: aca podriamos hacer lo mismo con
 
 `kubectl get namespaces`{{execute}}
 
-должно показать новое пространство имен "test" в нашем кластере **Kubernetes**.
