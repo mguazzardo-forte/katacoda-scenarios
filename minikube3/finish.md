@@ -1,0 +1,1 @@
+# En este tutorial hemos aprendido lo basico de como hacer troubleshooting a nuestras aplicaciones corriendo en kubernetes. Ya deberiamos saber como ver logs , listar recursos y correr comandos en los contenedores # 
