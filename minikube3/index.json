@@ -1,0 +1,38 @@
+{
+	"title": "Modulo 3 - Viendo nuestra app",
+	"description": "Viendo nuestra app",
+	"pathwayTitle": "Kubernetes Bootcamp",
+	"backend": {
+		"port": 30000,
+		"dockerimage": "minikube-running:1.20"
+	},
+	"environment": {
+		"uilayout": "terminal",
+		"hideintro": false,
+		"hidefinish": false
+	},
+	"details": {
+		"steps": [{
+			"title": " Paso 1 Chequeando la configuracion de la app",
+			"code": "foreground.sh",
+			"text": "step1.md"
+		}, {
+			"title": "Paso 2 Mostrando la app en la terminal",
+			"text": "step2.md"
+		}, {
+			"title": "Paso 3 Mostrando los logs del contenedor",
+			"text": "step3.md"
+		}, {
+			"title": "Paso 4 Ejecutando los comandos en el contenedor ",
+			"text": "step4.md"
+		}],
+		"intro": {
+			"courseData": "env-init.sh",
+			"text": "intro.md"
+		},
+		"finish": {
+			"text": "finish.md"
+		}
+	},
+	"embedded_survey_url": "https://docs.google.com/forms/d/e/1FAIpQLScMbLRAbaZ8NleOFYRrepdIwCbhClHK3abu3SgzMn1KT_H5iA/viewform?entry.434419381="
+}
