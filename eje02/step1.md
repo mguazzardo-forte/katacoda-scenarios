@@ -17,7 +17,7 @@ Vemos que este corriendo el contenedor de mariadb
 
 Para poder probar el acceso a la base de datos, lo que vamos a hacer, es instalar el cliente de mariadb
 
-`apt -y install mariadb-client-core-10.0`{{EXECUTE}}
+`apt -y update && apt -y install mariadb-client-core-10.0`{{EXECUTE}}
 
 Ahora, necesitamos saber la IP del contenedor
 
