@@ -1,6 +1,6 @@
 ## Objetivo
 
-Explorar OpenShift version 4.7 y realizar un deployment con estrategia de dockerfile.
+Explorar OpenShift version 4.7 y realizar un deployment con estrategia de template.
 
 ## Conceptos
 
