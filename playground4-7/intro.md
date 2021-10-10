@@ -1,6 +1,6 @@
 ## Objetivo
 
-Explorar OpenShift version 4.4.
+Explorar OpenShift version 4.7 y realizar un deployment con estrategia de dockerfile.
 
 ## Conceptos
 

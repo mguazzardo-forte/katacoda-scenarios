@@ -1,9 +1,6 @@
-Before you get started we recommend reading the following tips. They explain
-a bit about how the playground environment is setup and what access you have.
+## Nos logueamos al dashboard 
 
-## Logging in to the Cluster via Dashboard new
-
-Click the [Console](https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com) tab to open the dashboard. 
+La [Console](https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com). 
 
 You will then able able to login with admin permissions with:
 
@@ -15,7 +12,7 @@ Or as a standard user with:
 * **Username:** ``developer``{{copy}}
 * **Password:** ``developer``{{copy}}
 
-## Logging in to the Cluster via CLI
+## Loguearse al openshift via clia
 
 When the OpenShift playground is created you will be logged in initially as
 a cluster admin (`oc whoami`{{execute}}) on the command line. This will allow you to perform
@@ -36,23 +33,28 @@ This will log you in using the credentials:
 
 Use the same credentials to log into the web console.
 
-## Creando un despliegue desde consola
+## Creando un despliegue desde consola, usando la estrategia de Dockerfile
 
-``oc new-project apache``{{execute}}
+``oc new-project flaskapi``{{execute}}
 
 Con esto creamos el nuevo proyecto apache, y ahora, lo que falta es crear la app.
 
-``oc new-app httpd --name apache``{{execute}}
+``oc new-app https://github.com/mguazzardo/flaskapi --name flaskapi``{{execute}}
 
 
+Si queremos ver el progreso, lo que hacemos es lo siguiente
+
+``oc logs flaskapi-1-build -f``{{execute}}
 
 Esperamos, y deberia crear un deploy en la siguiente ruta:
 
 Antes, debemos exponer el servicio
 
-``oc expose svc apache``{{execute}}
+``oc expose svc flaskapi``{{execute}}
 
 La ruta
 
-http://apache-apache.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
+http://flaskapi-flaskapi.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
+
+Con esto vemos nuestro primer despliegue con DockerHub
