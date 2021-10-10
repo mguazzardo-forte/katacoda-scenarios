@@ -41,9 +41,9 @@ Con esto creamos el nuevo proyecto template, y ahora, lo que falta es crear la a
 Para eso lo seguiremos desde la consola.
 Pero antes, tenemos que importar el template que hemos generado
 
-``oc create -f template-php.json -n openshift``{{execute}}
+``cd template && oc create -f template-php.json -n openshift``{{execute}}
 
 
 Y ahora nos vamos a consola, para ver que todo este bien
 
-Con esto vemos nuestro primer despliegue con DockerHub
+Con esto vemos nuestro primer despliegue con templates
