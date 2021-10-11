@@ -69,4 +69,4 @@ Cuando terminamos, vemos exponemos el servicio
 
 Y ahora lanzamos la consola en la siguiente url
 
-http://app-mariadb.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
+http://app-mariadb.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/public/
