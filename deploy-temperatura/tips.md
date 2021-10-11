@@ -33,7 +33,7 @@ Con esto creamos el proyecto temperatura, y ahora, lo que falta es crear la app.
 
 Si queremos ver el progreso, lo que hacemos es lo siguiente
 
-``oc get po -f``{{execute}}
+``oc get po -w``{{execute}}
 
 Esperamos, y deberia crear un deploy en la siguiente ruta:
 
