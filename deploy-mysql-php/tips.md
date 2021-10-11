@@ -45,9 +45,12 @@ Esperamos, y cuando todo este ok, hacemos lo siguiente
 Con esto conseguimos el nombre de nuestro pod, por que ahora vamos a hacer 
 un port forward
 
-``nohup oc port-forward $PO 3306:3306``{{execute}}
+``nohup oc port-forward $PO 3306:3306 &``{{execute}}
 
 teniendo esto, lo que ahora hacemos es agregar la base de datos.
+para eso primero bajamos el cliente mysql
+
+``yum -y update && yum -y install mysql``{{execute}}
 
 ``mysql -u user1 -pmaster -h 127.0.0.1 < db.sql``{{execute}}
 
