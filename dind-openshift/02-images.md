@@ -38,7 +38,7 @@ primero , corremos
 
 Luego, sacamos la ip del ultimo contenedor
 
-``IP=$(oc get po -o wide | tail -1 | awk '{print $(NF-2)}'``{{execute}}
+``IP=$(oc get po -o wide | grep Run | grep apa | tail -1 |  awk '{print $(NF-2)}')``{{execute}}
 
 y finalmente, hacemos
 
