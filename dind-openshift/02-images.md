@@ -4,10 +4,12 @@ Los contenedores de las imagenes, son realmente archivos tar images asociado con
 
 #Esperamos unos 5 minutos aproximadamente
 
-docker exec -it openshift-master oc get nodes
+``docker exec -it openshift-master oc get nodes``{{execute}}
 
 Vamos a entrar al contenedor master
 y creamos un nuevo proyecto apache2
+``docker exec -it openshift-master bash``{{execute}}
+
 ``oc new-project apache2``{{execute}}
 
 ahora lanzamos una aplicacion de httpd
