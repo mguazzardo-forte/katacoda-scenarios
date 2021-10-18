@@ -20,7 +20,7 @@ objects:
     - env:
       - name: SHOW_DATA
         value: ${SHOW_DATA} 
-      image: example/appimage
+      image: php:latest 
       name: app1
       ports:
       - containerPort: 8080
