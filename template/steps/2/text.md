@@ -20,7 +20,7 @@ objects:
     - env:
       - name: SHOW_DATA
         value: ${SHOW_DATA} 
-      image: php:latest 
+      image: centos/httpd-24-centos8:latest
       name: app1
       ports:
       - containerPort: 8080
