@@ -41,9 +41,9 @@
 	],
   "environment": {
     "showdashboard": true,
-    "dashboards": [{"name": "Dashboard", "port": 8443}],
+    "dashboards": [{"name": "Console", "href": "https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com"}],
     "uilayout": "editor-terminal",
-    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+    "uimessage1": "\u001b[32mMas info en  https://mguazzardo.blogspot.com\u001b[m\r\n"
   },
     "backend": {
         "trainingid": "openshift-4-7",
