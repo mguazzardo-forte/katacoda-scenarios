@@ -14,7 +14,7 @@ Vemos como va corriendo
 
 Exponemos la ruta
 
-``oc expose scv app``{{execute}}
+``oc expose svc app``{{execute}}
 
 
 La ruta es: http://app-app-rollout.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
