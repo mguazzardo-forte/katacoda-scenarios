@@ -18,6 +18,6 @@ Aplicamos la configuracion
 `oc create cm nginx --from-file nginx_custom_default.conf`{{execute}}
 
 Vemos como quedo nuestro configmap:
-`oc export configmap/nginx`{{execute}}
+`oc describe configmap/nginx`{{execute}}
 
 Vemos que hemos cambiado toda la configuracion `nginx_custom_default.conf`, La cual sera usada en el pod.
