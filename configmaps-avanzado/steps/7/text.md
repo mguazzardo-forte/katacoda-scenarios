@@ -40,7 +40,7 @@ Lo exponemos para tener la ruta:
 `oc get route`{{execute}}
 
 Finalmente, usaremos curl para ver si todo salio bien!:
-`curl -H 'Host: example3-advanced.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com' 127.0.0.1`{{execute}}
+`curl  example3-advanced.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
 
 ```
 ...
@@ -51,6 +51,10 @@ Finalmente, usaremos curl para ver si todo salio bien!:
 <output omitted>
 ...
 ```
+
+La ruta en html es:
+
+http://example3-advanced.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
 Como vemos ngnix esta escuchando  en el  puerto 8888/tcp, como especificamos en el ConfigMap. con esto concluimos el ejercicio de  ConfigMaps, por eso borramos nuestro lab:
 `oc delete all --all`{{execute}}
