@@ -23,6 +23,8 @@ Ahora empieza el rollout
 
 ``oc rollout latest dc/app``{{execute}}
 
+NOTA IMPORTANTE: Hacer el Edit  de la page!
+
 Ahora preguntamos la historia del rollout
 
 ``oc rollout history dc/app``{{execute}}
@@ -44,7 +46,13 @@ Por ultimo, vemos en la url, como todo cambio, y como quedaron los pods
 
 ``oc get po -w``{{execute}}
 
+#Pero ahora nos damos cuenta que queremos volver atras, como hacemos?. Simple.
 
+``oc rollout undo dc/app``{{execute}}
+
+Esto nos mandara al ultimo deploy bueno que se hizo.
+
+Nos vemos!
 
 
 
