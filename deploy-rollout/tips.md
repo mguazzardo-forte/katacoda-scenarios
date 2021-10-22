@@ -14,7 +14,7 @@ Vemos como va corriendo
 
 Exponemos la ruta
 
-``oc expose scv app``{{execute}}
+``oc expose svc app``{{execute}}
 
 
 La ruta es: http://app-app-rollout.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
@@ -22,6 +22,8 @@ La ruta es: http://app-app-rollout.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].envir
 Ahora empieza el rollout
 
 ``oc rollout latest dc/app``{{execute}}
+
+NOTA IMPORTANTE: Hacer el Edit  de la page!
 
 Ahora preguntamos la historia del rollout
 
@@ -44,7 +46,13 @@ Por ultimo, vemos en la url, como todo cambio, y como quedaron los pods
 
 ``oc get po -w``{{execute}}
 
+#Pero ahora nos damos cuenta que queremos volver atras, como hacemos?. Simple.
 
+``oc rollout undo dc/app``{{execute}}
+
+Esto nos mandara al ultimo deploy bueno que se hizo.
+
+Nos vemos!
 
 
 
