@@ -6,7 +6,11 @@
 
 Con esto creamos el nuevo proyecto mariadb, y ahora vamos a crear la base de datos.
 
+Para eso nos bajamos dos archivos fundamentales.... el template y la db.sql
+
 ``wget https://raw.githubusercontent.com/mguazzardo/php-quotes/main/example.yaml``{{execute}}
+
+``wget https://raw.githubusercontent.com/mguazzardo/php-quotes/main/db.sql``{{execute}}
 
 Ahora creamos el objeto template
 
