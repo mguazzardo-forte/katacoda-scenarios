@@ -40,7 +40,7 @@ Clonamos el repo nuevamente
 
 Ahora vamos al directorio que contiene los ficheros a modificar
 
-``cd multi-container-app\frontend``{{execute}}
+``cd multi-container-app/frontend/src``{{execute}}
 
 y Aca hacemos las sustituciones
 
@@ -50,7 +50,7 @@ y Aca hacemos las sustituciones
 ``sed s/backend/$ROUTE/g App.js > App.js.new``{{execute}}
 
 
-``mv App.js.new App.js``{{execute}}
+``rm -fr App.js && mv App.js.new App.js``{{execute}}
 
 Ahora lanzamos los builds
 
@@ -59,11 +59,11 @@ Ahora lanzamos los builds
 
 Y luego lanzamos el start
 
-``oc start-build frontend --from-dir=.``{{execute}}
+``cd .. && oc start-build frontend --from-dir=.``{{execute}}
 
 Cuando haya terminado el build, lanzamos la app
 
-``oc new-app cookbook``{{execute}}
+``oc new-app frontend``{{execute}}
 
 
 Y luego exponemos el servicio
