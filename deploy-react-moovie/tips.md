@@ -12,7 +12,7 @@ Y escogemos un repo para la ocasion.
 
 
 
-``oc new-app nodeshift/ubi8-s2i-web-app:latest~https://github.com/mguazzardo/MovieApp --name react``{{execute}}
+``oc new-app nodeshift/ubi8-s2i-web-app:latest~https://github.com/mguazzardo/MovieApp --name react context-dir react-rmdb``{{execute}}
 
 
 Si queremos ver el progreso, lo que hacemos es lo siguiente
