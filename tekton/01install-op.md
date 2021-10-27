@@ -50,6 +50,13 @@ Lanzamos el pipeline , desde el cli de tekton
 `tkn pipeline start build-and-deploy -w name=shared-workspace,claimName=source-pvc -p deployment-name=debian -p git-url=https://github.com/mguazzardo/demislamer`{{execute}}
 
 
+vemos los logs
+
+
+`tkn pipeline logs`{{execute}}
+
+Cuando termina, vemos la ruta que dejo
+
 Vemos la ruta que nos dejo
 
 `oc get route`{{execute}}
