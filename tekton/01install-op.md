@@ -52,8 +52,10 @@ Lanzamos el pipeline , desde el cli de tekton
 
 vemos los logs
 
+`PIPE=$(tkn pipeline ls | awk '{print $5}'| awk '{print $2}')`{{execute}}
 
-`tkn pipeline logs`{{execute}}
+`tkn pipelinerun logs $PIPE -f -n debian`{{execute}}
+
 
 Cuando termina, vemos la ruta que dejo
 
