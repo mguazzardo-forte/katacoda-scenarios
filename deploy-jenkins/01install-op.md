@@ -29,6 +29,17 @@ Ahora lanzamos el build config del pipeline
 
 `oc start-build nodejs-sample-pipeline`{{execute}}
 
+Vemos como vienen los logs:
+
+`oc logs bc/nodejs-sample-pipeline -f`{{execute}}
+
+Viendo la ruta
+
+`echo "Aguarde que se ejecuta el pipeline" &&sleep 100&& echo "termino"`{{execute}}
+
+http://debian-debian.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
+
+
 Reforzando conocimientos:
 
 https://docs.openshift.com/container-platform/4.4/builds/build-strategies.html#builds-tutorial-pipeline_build-strategies
