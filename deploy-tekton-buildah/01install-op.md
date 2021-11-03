@@ -54,7 +54,7 @@ vemos los logs
 
 `PIPE=$(tkn pipeline ls | awk '{print $5}'| awk '{print $2}')`{{execute}}
 
-`tkn pipelinerun logs $PIPE -f -n debian`{{execute}}
+`tkn pipelinerun logs $PIPE -f -n flaskapi`{{execute}}
 
 
 Cuando termina, vemos la ruta que dejo
