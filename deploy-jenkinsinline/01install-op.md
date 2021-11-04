@@ -5,7 +5,7 @@ Jenkins en openshift 4.
 
 Me creo un project
 
-`oc new-project flaskapi`{{execute}}
+`oc new-project pipelines`{{execute}}
 
 
 Lanzo Jenkins desde el template ephemeral
@@ -18,7 +18,7 @@ Espero un minuto y veo todo
 
 Como vemos ya tenemos el jenkins, ahora lanzo el pipeline.
 
-`https://raw.githubusercontent.com/mguazzardo/apiflask/main/jenkinsfile.yaml`{{execute}}
+`oc create -f https://raw.githubusercontent.com/mguazzardo/apiflask/main/jenkinsfile.yaml`{{execute}}
 
 
 Veo que BuildsConfigs Tenemos ahora para correr:
