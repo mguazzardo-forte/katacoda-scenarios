@@ -18,7 +18,8 @@ Espero un minuto y veo todo
 
 Como vemos ya tenemos el jenkins, ahora lanzo el pipeline.
 
-`oc create -f https://raw.githubusercontent.com/mguazzardo/apiflask/main/jenkinsfile.yaml`{{execute}}
+`oc create -f https://raw.githubusercontent.com/mguazzardo/apiflask/main/final.yaml`{{execute}}
+
 
 
 Veo que BuildsConfigs Tenemos ahora para correr:
