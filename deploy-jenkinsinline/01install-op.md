@@ -28,7 +28,7 @@ Veo que BuildsConfigs Tenemos ahora para correr:
 
 Ahora lanzamos el build config del pipeline
 
-`oc start-build flaskapi`{{execute}}
+`oc start-build nodejs-sample-pipeline`{{execute}}
 
 
 Viendo la ruta
