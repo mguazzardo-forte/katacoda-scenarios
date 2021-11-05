@@ -10,15 +10,33 @@ Con esto creamos el nuevo proyecto variables
 
 Aplicamos este deployConfig
 
-``oc crete -f deploy-variables.yaml``{{execute}}
+``oc create -f deploy-variables.yaml``{{execute}}
 
 Si queremos ver el progreso, lo que hacemos es lo siguiente
 
 ``oc get po -w``{{execute}}
 
-Esperamos, y cuando todo este ok, hacemos lo siguiente
+Primero vemos los logs 
 
-Entramos al pod, y vemos las variables desplegadas
+Me consigo el POD:
+
+``POD=$(oc get po | grep -i ru | awk '{print $1}')``{{execute}}
+
+Con esto veo los logs, y luego entro al POD
+
+``oc logs $POD``{{execute}}
+
+Ahora vemos las variables de ambiente, para eso entramos al pod
+
+``oc rsh $POD``{{execute}}
+
+Y adentro del pod
+
+``env | grep MENSAJE1``{{execute}}
+
+Luego salimos
+
+``exit``{{execute}}
 
 
-Con esto vemos nuestro primer despliegue con DockerHub
+Con esto terminamos nuestro ejercicio
