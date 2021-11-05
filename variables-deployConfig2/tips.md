@@ -43,5 +43,6 @@ Pero ahora lo que queremos hacer, es hacer un edit "on the fly"
 Lo que haremos vamos a editar el dc, con oc edit.
 
 
+``oc edit bc/busybox``{{execute}}
 
 Con esto terminamos nuestro ejercicio
