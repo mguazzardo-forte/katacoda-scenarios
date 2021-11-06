@@ -12,7 +12,7 @@ spec:
         deployment: node
     spec:
       containers:
-      - image: image-registry.openshift-image-registry.svc:5000/node/node@sha256:cdcfd7ec95a7e25d379e426d4857d6d20ef5d1d4f3119b064977f30c78617bd8
+      - image: nodejs:10
         name: node
         env:
         - name: MIO
