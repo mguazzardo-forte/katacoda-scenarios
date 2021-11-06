@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node
+spec:
+  selector:
+    matchLabels:
+      deployment: node
+  template:
+    metadata:
+      labels:
+        deployment: node
+    spec:
+      containers:
+      - image: image-registry.openshift-image-registry.svc:5000/node/node@sha256:cdcfd7ec95a7e25d379e426d4857d6d20ef5d1d4f3119b064977f30c78617bd8
+        name: node
+        ports:
+        - containerPort: 8080
+        env:
+        - name: MY_POD_NAME
+          value: metadata.name
