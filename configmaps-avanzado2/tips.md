@@ -22,7 +22,7 @@ Esperamos y exponemos el servicio
 
 Y ahora vemos la ruta
 
-http://node-node.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/api/topics
+http://node-node.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
 
 
