@@ -22,7 +22,7 @@ Aca empezamos a forjar nuestro configmap
 
 Crearemos el configmap de la manera mas sencilla, ahora usaremos un fichero de configuracion
 
-``oc create configmap cm1 --from-literal=MENSAJE1="Hola Busybox" --from-env-file busybox.cfg``{{execute}}
+``oc create configmap cm1  --from-env-file busybox-cm``{{execute}}
 
 
 
