@@ -11,7 +11,7 @@ Empezaremos con nuestro proyecto.
 
 Con esto creamos el nuevo proyecto variables
 
-`wget https://raw.githubusercontent.com/mguazzardo/demislamer/master/deploy-variables.yaml`{{execute}}
+`wget https://raw.githubusercontent.com/mguazzardo/demislamer/master/deploy-config.yaml`{{execute}}
 
 Aca empezamos a forjar nuestro configmap
 
@@ -26,11 +26,9 @@ Crearemos el configmap de la manera mas sencilla
 
 
 
-
-
 Aplicamos este deployConfig
 
-``oc create -f deploy-variables.yaml``{{execute}}
+``oc create -f deploy-config.yaml``{{execute}}
 
 Si queremos ver el progreso, lo que hacemos es lo siguiente
 
@@ -58,11 +56,6 @@ Luego salimos
 
 ``exit``{{execute}}
 
-Pero ahora lo que queremos hacer, es hacer un edit "on the fly"
-
-Lo que haremos vamos a editar el dc, con oc edit.
-
-
-``oc edit bc/busybox``{{execute}}
+El tema es que esto es a veces poco practico, y lo veremos de como levantarlo desde un fichero, con el formato clave valor.
 
 Con esto terminamos nuestro ejercicio
