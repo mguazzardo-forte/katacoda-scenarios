@@ -21,7 +21,7 @@ const server = http.createServer(async (req, res) => {
       "Content-type": "text/html",
     });
     res.end(
-      `<h1>Hello World from OpenShift NodeJS App in POD NAME: ${process.env.MY_POD_NAME}</h1>`
+      `<h1>Hello World from OpenShift NodeJS App in POD NAME: ${process.env.HOSTNAME}</h1>`
     );
   }
 });
