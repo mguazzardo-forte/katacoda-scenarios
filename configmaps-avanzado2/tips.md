@@ -25,6 +25,13 @@ Y ahora vemos la ruta
 http://node-node.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
 
+Pero como vemos ahi, dice el hostname , y una variable que aparece "undefined", y es ahi donde queremos inyectar la variable....
+
+Por consola es bien sencillo, pero lo vamos a hacer por linea de comandos.
+
+``oc set env deployment/node MY_VARIABLE="Marce"``{{execute}}
+
+
 
 
 
