@@ -9,7 +9,7 @@ La [Console](https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA
 
 Con esto creamos el nuevo proyecto node, y ahora vamos a lanzar la app
 
-``oc new-app mongo https://github.com/mguazzardo/katacoda-scenarios --context-dir=node-simple --name=node``{{execute}}
+``oc new-app https://github.com/mguazzardo/katacoda-scenarios --context-dir=simple-node --name=node``{{execute}}
 
 
 Si queremos ver el progreso, lo que hacemos es lo siguiente
