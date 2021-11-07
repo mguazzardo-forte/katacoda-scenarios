@@ -21,6 +21,10 @@ Aca empezamos a forjar nuestro secrets
 
 ``git clone https://github.com/mguazzardo/demislamer``{{execute}}
 
+Nos movemos al directorio
+``cd demislamer``{{execute}}
+
+
 Crearemos el secret de la forma man secilla
 
 ``bash mariadb-secretes/crear-mariadb-secret.sh``{{execute}}
