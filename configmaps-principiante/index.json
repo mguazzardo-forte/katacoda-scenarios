@@ -1,6 +1,6 @@
 {
     "icon": "fa-openshift",
-    "title": "DeployConfig Configmap",
+    "title": "Configmaps Principiante",
     "description": "",
     "pathwayTitle": "OpenShift",
     "difficulty": "beginner",
@@ -15,7 +15,7 @@
     },
     "details": {
         "steps": [{
-            "title": "DeployConfig Configmap",
+            "title": "Configmaps Principiante",
             "text": "tips.md"
         }],
         "intro": {

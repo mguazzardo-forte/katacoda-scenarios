@@ -1,1 +1,1 @@
-Gracias por usar este playground
+You've completed your Openshift Lab Exercise!

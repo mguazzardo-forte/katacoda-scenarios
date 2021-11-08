@@ -9,7 +9,23 @@ Empezaremos con nuestro proyecto.
 
 ``oc new-project variables``{{execute}}
 
-Con esto creamos el nuevo proyecto variables
+
+
+
+
+```
+Now using project "variables" on server "https://openshift:6443".
+
+You can add applications to this project with the 'new-app' command. For example, try:
+
+    oc new-app rails-postgresql-example
+
+to build a new example application in Ruby. Or use kubectl to deploy a simple Kubernetes application:
+
+    kubectl create deployment hello-node --image=k8s.gcr.io/serve_hostname
+
+```
+
 
 `wget https://raw.githubusercontent.com/mguazzardo/demislamer/master/deploy-config.yaml`{{execute}}
 
