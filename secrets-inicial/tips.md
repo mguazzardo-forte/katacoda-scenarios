@@ -35,6 +35,43 @@ Aplicamos este deployConfig
 
 ``oc create -f mariadb-secret.yaml``{{execute}}
 
+Vemos el fichero mariadb-secret.yaml
+
+<pre class="file" data-filename="mariadb-secret.yaml" data-target="replace">
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: mariadb
+  name: mariadb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mariadb
+  template:
+    metadata:
+      labels:
+        app: mariadb
+    spec:
+      containers:
+      - image: busybox 
+        name: busybox
+        command: [ "/bin/sh", "-c", 'while true ; do echo "$MYSQL_ROOT_PASSWORD"; sleep 1; done;' ]
+        env:
+          - name: MYSQL_ROOT_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: mariadb-root-password
+                key: MYSQL_ROOT_PASSWORD 
+        ports:
+        - containerPort: 3306
+          protocol: TCP
+
+</pre>
+
+
+
 Si queremos ver el progreso, lo que hacemos es lo siguiente
 
 ``oc get po -w``{{execute}}
