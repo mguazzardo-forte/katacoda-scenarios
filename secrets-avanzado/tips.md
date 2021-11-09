@@ -24,7 +24,7 @@ Ahora lanzamos la app.
 Esperamos unos minutos
 
 
-``echo "Espere 3 minutos && sleep 180 && echo "Listo"``{{execute}}
+``echo "Espere 3 minutos && sleep 180 && echo Listo"``{{execute}}
 
 
 Vemos que BC ( BuildConfig) Tenemos.
