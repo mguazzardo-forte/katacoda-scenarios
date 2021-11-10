@@ -42,9 +42,6 @@ Desde ese pod, restauramos la base de datos
 
 
 
-Luego salimos de la consola de mysql
-
-``exit;``{{execute}}
 
 Ahora salimos del contenedor
 
