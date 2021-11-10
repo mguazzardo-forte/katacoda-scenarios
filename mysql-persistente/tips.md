@@ -10,7 +10,7 @@ Despues de esto, lo que voy a generar es una nueva app, con un usuario, password
 
 Me bajo una db 
 
-``git clone https://raw.githubusercontent.com/mguazzardo/phpmariadb/main/db1.sql``{{execute}}
+``wget https://raw.githubusercontent.com/mguazzardo/phpmariadb/main/db1.sql``{{execute}}
 
 
 
