@@ -108,4 +108,19 @@ Ahora, como mandan las buenas practicas vamos a esperar que termine.
 Cuando termine, veremos si esto esta funcionando....
 
 
-``oc new-app https://github.com/mguazzardo/phpdeploy``{{execute}}
+``oc new-app https://github.com/mguazzardo/mysql-complejo``{{execute}}
+
+
+Vemos como  viene el phpdeploy
+
+``oc logs bc/mysql-complejo``{{execute}}
+
+Cuando termine, exponemos el servicio
+
+``oc expose svc mysql-complejo``{{execute}}
+
+Ahora lo que falta es la Ruta
+
+http://mysql-complejo-db..[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/public
+
+

@@ -1,6 +1,6 @@
 {
     "icon": "fa-openshift",
-    "title": "MYSQL Persistente ",
+    "title": "MYSQL Persistente Complejo ",
     "description": "",
     "pathwayTitle": "OpenShift",
     "difficulty": "beginner",
@@ -15,7 +15,7 @@
     },
     "details": {
         "steps": [{
-            "title": "Conectandose  a fedora core",
+            "title": "Mysql Persistente Complejo",
             "text": "tips.md"
         }],
         "intro": {
