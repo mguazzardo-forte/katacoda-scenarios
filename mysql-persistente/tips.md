@@ -40,9 +40,7 @@ Desde ese pod, restauramos la base de datos
 
 ``mysql -u db1 -pdb1 < /tmp/db1.sql``{{execute}}
 
-Lanzamos un show databases
 
-``show databases;``{{execute}}
 
 Luego salimos de la consola de mysql
 
