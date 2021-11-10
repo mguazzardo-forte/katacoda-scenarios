@@ -8,9 +8,7 @@ Despues de esto, lo que voy a generar es una nueva app, con un usuario, password
 
 ``oc new-app mysql-persistent -e 'MYSQL_USER=db1' -e 'MYSQL_PASSWORD=db1' -e 'MYSQL_DATABASE=db1'``{{execute}}
 
-Me bajo una db 
 
-``wget https://raw.githubusercontent.com/mguazzardo/phpmariadb/main/db1.sql``{{execute}}
 
 
 
@@ -26,11 +24,21 @@ Luego, cuando el rollout me dice que esta finalizado, vemos los pods
 
 Luego, ingresamos al pod
 
-``PO=$(oc get po | grep -i ru | awk '{print $1}');oc rsh $PO``{{execute}}
+``PO=$(oc get po | grep -i ru | awk '{print $1}')``{{execute}}
 
-Desde ese pod, ingresamos a la base de datos
 
-``mysql -u db1 -pdb1``{{execute}}
+Ahora aca lo que hacemos es copiarnos el dump de la base de datos al POD
+
+
+``oc cp db1.sql $PO/tmp``{{execute}}
+
+Ingresamos al pod
+
+``oc rsh $PO``{{execute}}
+
+Desde ese pod, restauramos la base de datos
+
+``mysql -u db1 -pdb1 < /tmp/db1.sql``{{execute}}
 
 Lanzamos un show databases
 
