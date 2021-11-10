@@ -8,6 +8,13 @@ Despues de esto, lo que voy a generar es una nueva app, con un usuario, password
 
 ``oc new-app mysql-persistent -e 'MYSQL_USER=db1' -e 'MYSQL_PASSWORD=db1' -e 'MYSQL_DATABASE=db1'``{{execute}}
 
+Me bajo una db 
+
+``git clone https://raw.githubusercontent.com/mguazzardo/phpmariadb/main/db1.sql``{{execute}}
+
+
+
+
 Luego de esto, vamos a ver el avance de esto con el comando rollout
 
 ``oc rollout status dc/mysql``{{execute}}
