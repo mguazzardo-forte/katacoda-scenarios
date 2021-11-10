@@ -30,7 +30,7 @@ Luego, ingresamos al pod
 Ahora aca lo que hacemos es copiarnos el dump de la base de datos al POD
 
 
-``oc cp db1.sql $PO/tmp``{{execute}}
+``oc cp db1.sql $PO:/tmp``{{execute}}
 
 Ingresamos al pod
 
