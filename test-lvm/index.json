@@ -1,5 +1,5 @@
 {
-    "title": "26. Skill Test- LVM ",
+    "title": "LVM ",
     "description": "Skill Test 3",
     "noindex": true,
     "details": {
@@ -27,6 +27,6 @@
         "uilayout": "terminal"
     },
     "backend": {
-        "imageid": "openshift-4-7"
+        "imageid": "ubuntu-2004"
     }
 }
