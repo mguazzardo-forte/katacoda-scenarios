@@ -48,6 +48,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "rhel8-4"
+    "imageid": "openshift-4-7"
   }
 }
