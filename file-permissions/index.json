@@ -56,6 +56,6 @@
     "terminals": [{"name": "RHEL User Terminal", "target": "host01"}]
   },
   "backend": {
-    "imageid": "rhel8-4"
+    "imageid": "Centos7-7"
   }
 }
