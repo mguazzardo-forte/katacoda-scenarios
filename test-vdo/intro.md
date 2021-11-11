@@ -1,0 +1,3 @@
+# Goal:
+
+Aca aprenderemos VDO
