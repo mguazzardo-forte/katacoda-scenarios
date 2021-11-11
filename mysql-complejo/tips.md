@@ -121,6 +121,6 @@ Cuando termine, exponemos el servicio
 
 Ahora lo que falta es la Ruta
 
-http://mysql-complejo-db..[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/public
+http://mysql-complejo-db.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/public
 
 
