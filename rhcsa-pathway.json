@@ -7,7 +7,13 @@
       "course_id": "file-permissions",
       "title": "File Permissions",
       "description": ""
+    },
+    {
+      "course_id": "04-rpm",
+      "title": "Ejercicios de RPM",
+      "description": ""
     }
+
     
   ]
 }

@@ -2,6 +2,7 @@
 
 # create guest user account
 useradd guest
+useradd -m rhel
 
 # create team group
 groupadd team
