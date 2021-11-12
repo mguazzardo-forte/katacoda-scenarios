@@ -1,1 +1,0 @@
-yum install chrony -y

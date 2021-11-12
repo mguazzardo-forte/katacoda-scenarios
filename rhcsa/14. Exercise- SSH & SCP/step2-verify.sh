@@ -1,1 +1,0 @@
-ssh node01 [[ -e /home/bob/file1 ]] && echo done

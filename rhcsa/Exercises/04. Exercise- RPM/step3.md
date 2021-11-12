@@ -1,1 +1,0 @@
-Remove the nano package then query to confirm if the package is installed

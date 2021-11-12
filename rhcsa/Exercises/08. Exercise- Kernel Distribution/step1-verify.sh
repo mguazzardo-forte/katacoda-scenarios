@@ -1,2 +1,0 @@
-[ -d /boot ] && echo "done"
-

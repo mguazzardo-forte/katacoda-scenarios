@@ -1,1 +1,0 @@
-IN=$( pgrep -u user -l| grep "vim" | cut -d" " -f2 ) && [[ $IN == vim ]] && echo done

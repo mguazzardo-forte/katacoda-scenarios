@@ -1,1 +1,0 @@
-OUT=$( vgdisplay | grep "professor" | cut -dG -f1 ) && [[ $OUT -eq V ]] && echo done

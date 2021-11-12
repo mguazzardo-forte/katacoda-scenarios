@@ -1,1 +1,0 @@
-id mary && echo done

@@ -1,1 +1,0 @@
-Navigate into the /tmp directory, create two new directories named "dir1" and "dir2" and two files called "file1" and "file2".

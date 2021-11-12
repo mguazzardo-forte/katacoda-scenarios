@@ -1,1 +1,0 @@
-OUT=$( grep galactica /etc/group | cut -d: -f1 ) && IN=$( grep colonial-one /etc/group | cut -d: -f1 ) && [[ $OUT == galactica ]] && [[ $IN == colonial-one ]] && cd /home/groups/$OUT && cd /home/groups/$IN && echo done

@@ -1,1 +1,0 @@
-<pre> Modify the user apollo so that the user has authentication but cannot login to a shell terminal </pre>

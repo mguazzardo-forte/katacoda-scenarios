@@ -1,1 +1,0 @@
-Using setfacl, change the "other" permissions to none on file1

@@ -1,1 +1,0 @@
-OUT=$( grep viper /etc/passwd | cut -d: -f3) && [ "$OUT" -lt "1000" ] &&  echo done

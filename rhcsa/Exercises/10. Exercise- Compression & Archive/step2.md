@@ -1,1 +1,0 @@
-List the contents of the tar archive into standard output and use the and operand to issue a second command piping the content into "/root/verify.txt"

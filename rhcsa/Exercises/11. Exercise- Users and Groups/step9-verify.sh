@@ -1,1 +1,0 @@
-DOWN=$( cat /etc/passwd | grep apollo |cut -d: -f7 ) && [[ $DOWN == "/sbin/nologin" ]] && echo done
