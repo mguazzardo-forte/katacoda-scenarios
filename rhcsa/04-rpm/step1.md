@@ -1,2 +1,3 @@
-1. Download the "nano" RPM package using yumdownloader and change the package name to nano.rpm for this exercise
-2. install the nano program using RPM
+1. Baje el paquete "nano" usando  yumdownloader (Ya le hemos acondicionado su entorno ) y cambiele el nombre al paquete para que sea nano.rpm.
+
+2. instale el paquete usando  RPM

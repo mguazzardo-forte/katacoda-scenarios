@@ -1,1 +1,1 @@
-Remove the nano package then query to confirm if the package is installed
+Borre el paquete RPM llamado nano, y confirme que ha sido borrado.

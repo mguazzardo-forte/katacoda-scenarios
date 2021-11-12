@@ -1,12 +1,11 @@
-RPM allows us to query information about any packages it has downloaded.
-To see if it is installed run:
+RPM nos permite listar y consultar informacion sobre los paquetes que nos hemos bajado.
+Para ver si estos estan instalados, como por ejemplo nano, corremos:
 `rpm -qa nano`{{execute}} 
 
-To see all the files installed as apart of nano run
+Para ver los archivos que forman parte del paquete nano, hacemos una consulta del tipo
 `rpm -ql nano`{{execute}}
 
-To list all the documentation about nano run
+Para  listar  toda la documentacion acerca de nano corremos 
 `rpm -qd nano`{{execute}} 
 
-The last one is very powerful as it provides you the read me and everything else you need to know about proper use of the package. 
 
