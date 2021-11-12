@@ -1,0 +1,13 @@
+{
+  "title": "Aprendiendo RHCSA",
+  "icon": "fa-openshift",
+  "description": "Practicas de RHCSA",
+  "courses": [
+    {
+      "course_id": "file-permissions",
+      "title": "File Permissions",
+      "description": ""
+    }
+    
+  ]
+}
