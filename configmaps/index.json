@@ -56,7 +56,7 @@
     "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
   },
     "backend": {
-        "trainingid": "openshift-3-11",
-        "imageid": "openshift-3-11"
+        "trainingid": "openshift-4-7",
+        "imageid": "openshift-4-7"
     }
 }
