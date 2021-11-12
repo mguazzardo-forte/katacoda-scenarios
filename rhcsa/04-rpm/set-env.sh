@@ -1,1 +1,1 @@
-yum update && yum -y install yum-utils
+yum -y install yum-utils
