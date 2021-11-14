@@ -43,7 +43,14 @@
       "course_id": "user-basics",
       "title": "Manejo de Usuarios Basicos",
       "description": ""
+    },
+
+    {
+      "course_id": "mans",
+      "title": "Paginas de manual",
+      "description": ""
     }
+
 
 
   ]

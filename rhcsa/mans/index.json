@@ -1,0 +1,32 @@
+{
+    "title": "Man Info del sistema ",
+    "description": "Informacion del sistema",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Intro",
+                "code": "foreground.sh",
+                "text": "step0.md"
+            },
+            {
+                "title": "Informacion del Sistema",
+                "text": "step1.md",
+                "answer": "step1-answer.md"
+            }
+        ],
+        "assets": {
+            "host01":
+            [
+                {"file": "verify.sh", "target": "/tmp", "chmod": "+x"}
+            ]
+        }
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "openshift-4-7"
+    }
+}
