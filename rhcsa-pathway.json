@@ -17,7 +17,13 @@
       "course_id": "03-rpm",
       "title": "Ejercicios de RPM y grupos",
       "description": ""
-    },
+    }
+     {
+      "course_id": "22-labs",
+      "title": "Ejercicios de labs",
+      "description": ""
+    }
+    ,
    {
       "course_id": "26-lvm",
       "title": "Ejercicios de LVM y otros",
