@@ -38,7 +38,13 @@
       "course_id": "acl",
       "title": "Ejercicios de ACL",
       "description": ""
+    },
+    {
+      "course_id": "user-basics",
+      "title": "Manejo de Usuarios Basicos",
+      "description": ""
     }
+
 
   ]
 }
