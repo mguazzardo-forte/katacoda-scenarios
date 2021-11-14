@@ -22,6 +22,11 @@
       "course_id": "26-lvm",
       "title": "Ejercicios de LVM y otros",
       "description": ""
+    },  
+   {
+      "course_id": "container",
+      "title": "Ejercicios de containers",
+      "description": ""
     }    
   ]
 }
