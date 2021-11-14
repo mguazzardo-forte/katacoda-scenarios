@@ -12,8 +12,11 @@
       "course_id": "04-rpm",
       "title": "Ejercicios de RPM",
       "description": ""
-    }
-
-    
+    },
+     {
+      "course_id": "03-rpm",
+      "title": "Ejercicios de RPM y grupos",
+      "description": ""
+    }         
   ]
 }

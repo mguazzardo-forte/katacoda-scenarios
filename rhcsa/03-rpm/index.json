@@ -1,0 +1,45 @@
+{
+    "title": "Ejercitando YUM ",
+    "description": "Ejercitando YUM",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Paso 1 - Yum",
+                "text": "step1.md",
+                "answer": "step1-answer.md",
+                "verify": "step1-verify.sh"
+            },
+            {
+                "title": "Paso 2 - updating",
+                "text": "step2.md",
+                "answer": "step2-answer.md",
+                "verify": "step2-verify.sh"
+            },
+            {
+                "title": "Paso 3 - yum groups",
+                "text": "step3.md",
+                "answer": "step3-answer.md"
+            },
+            {
+                "title": "Paso 4 - group install",
+                "text": "step4.md",
+                "answer": "step4-answer.md",
+                "verify": "step4-verify.sh"
+            },
+            {
+                "title": "Paso 5 - group uninstall",
+                "text": "step5.md",
+                "answer": "step5-answer.md",
+                "verify": "step5-verify.sh"
+            }
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "openshift-4-7"
+    }
+}
