@@ -17,14 +17,11 @@
       "course_id": "03-rpm",
       "title": "Ejercicios de RPM y grupos",
       "description": ""
-    },         
-    {
-      "course_id": "09-systemctl",
-      "title": "Ejercicios de targets y systemctl",
+    },
+   {
+      "course_id": "26-lvm",
+      "title": "Ejercicios de LVM y otros",
       "description": ""
-    }
-
-
-
+    }    
   ]
 }
