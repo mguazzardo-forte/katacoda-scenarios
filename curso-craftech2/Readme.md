@@ -1,1 +1,1 @@
-Segunda clase
+Segunda clase .
