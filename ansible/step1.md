@@ -29,10 +29,10 @@ y luego vemos que este corriendo
 
 agregamos hosts al /etc/hosts
 
-`echo "172.18.0.2 servera" >> /etc/hosts`{{execute}}
+`echo "172.17.0.2 servera" >> /etc/hosts`{{execute}}
 
-`echo "172.18.0.3 serverb" >> /etc/hosts`{{execute}}
-`echo "172.18.0.4 serverc" >> /etc/hosts`{{execute}}
+`echo "172.17.0.3 serverb" >> /etc/hosts`{{execute}}
+`echo "172.17.0.4 serverc" >> /etc/hosts`{{execute}}
 
 Luego, tratamos de ingresar a los hosts, para ver si estan corriendo bien.
 
